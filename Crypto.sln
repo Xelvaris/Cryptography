@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoLib", "CryptoLib\CryptoLib.csproj", "{FD2F0DB8-3FAD-4258-852C-F4508A22F615}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto-Terminal", "Crypto-Terminal\Crypto-Terminal.csproj", "{DBF513CE-B896-4E8D-B0B2-0A72BECDAF89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD2F0DB8-3FAD-4258-852C-F4508A22F615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD2F0DB8-3FAD-4258-852C-F4508A22F615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD2F0DB8-3FAD-4258-852C-F4508A22F615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD2F0DB8-3FAD-4258-852C-F4508A22F615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBF513CE-B896-4E8D-B0B2-0A72BECDAF89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBF513CE-B896-4E8D-B0B2-0A72BECDAF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBF513CE-B896-4E8D-B0B2-0A72BECDAF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBF513CE-B896-4E8D-B0B2-0A72BECDAF89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17B25796-82B9-47C5-885D-BF8C26B7A55E}
+	EndGlobalSection
+EndGlobal
