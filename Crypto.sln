@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoLib", "CryptoLib\Cryp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto-Terminal", "Crypto-Terminal\Crypto-Terminal.csproj", "{DBF513CE-B896-4E8D-B0B2-0A72BECDAF89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto-WinGUI", "Crypto-WinGUI\Crypto-WinGUI.csproj", "{F1EB6B1B-1DF0-4E82-ADEB-EA3D2654A745}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DBF513CE-B896-4E8D-B0B2-0A72BECDAF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBF513CE-B896-4E8D-B0B2-0A72BECDAF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBF513CE-B896-4E8D-B0B2-0A72BECDAF89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1EB6B1B-1DF0-4E82-ADEB-EA3D2654A745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1EB6B1B-1DF0-4E82-ADEB-EA3D2654A745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1EB6B1B-1DF0-4E82-ADEB-EA3D2654A745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1EB6B1B-1DF0-4E82-ADEB-EA3D2654A745}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
