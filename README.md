@@ -5,3 +5,4 @@ This is the repository for my Genius Project for my ECE English class. This is a
 This program when completed will have an universal .NET Core console application and a WinForms gui application. It will be able to encrypt and decrypt text using any of the ciphers and algorithms that I select to be coded into this program.
 
 ## Included Ciphers and Algorithms
+Each cipher and algorithm has it's own class in the CryptoLib project you cna find all the code for encrytion and decrytion in the class for the desired cipher/algorithm.
