@@ -7,6 +7,5 @@ This program when completed will have an universal .NET Core console application
 ## Included Ciphers and Algorithms
 Each cipher and algorithm has it's own class in the CryptoLib project you can find all the code for encryption, decryption, and the callenge for it in the class for the desired cipher/algorithm.
 
-- Scytale Cipher
 - Caesar Cipher
--
+- 
