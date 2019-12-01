@@ -7,17 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CryptoLib;
 
-namespace Crypto_WinGUI
+namespace CryptoWinGUI
 {
-    public partial class Main : Form
+    public partial class Form1 : Form
     {
-        public readonly string LogName = "CryptoWIN.log";
-        public Main()
+        public Form1()
         {
             InitializeComponent();
         }
-
     }
 }

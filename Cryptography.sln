@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoLib", "CryptoLib\CryptoLib.csproj", "{FD2F0DB8-3FAD-4258-852C-F4508A22F615}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoWinGUI", "CryptoWinGUI\CryptoWinGUI.csproj", "{7403F1D1-3A37-4655-8E9D-ACB90CB72A11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto-Terminal", "Crypto-Terminal\Crypto-Terminal.csproj", "{DBF513CE-B896-4E8D-B0B2-0A72BECDAF89}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto-WinGUI", "Crypto-WinGUI\Crypto-WinGUI.csproj", "{F1EB6B1B-1DF0-4E82-ADEB-EA3D2654A745}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoLib", "CryptoLib\CryptoLib.csproj", "{54B916A3-368F-4B18-B99A-E2752DD61CE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FD2F0DB8-3FAD-4258-852C-F4508A22F615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD2F0DB8-3FAD-4258-852C-F4508A22F615}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD2F0DB8-3FAD-4258-852C-F4508A22F615}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD2F0DB8-3FAD-4258-852C-F4508A22F615}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DBF513CE-B896-4E8D-B0B2-0A72BECDAF89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBF513CE-B896-4E8D-B0B2-0A72BECDAF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBF513CE-B896-4E8D-B0B2-0A72BECDAF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBF513CE-B896-4E8D-B0B2-0A72BECDAF89}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F1EB6B1B-1DF0-4E82-ADEB-EA3D2654A745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F1EB6B1B-1DF0-4E82-ADEB-EA3D2654A745}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F1EB6B1B-1DF0-4E82-ADEB-EA3D2654A745}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F1EB6B1B-1DF0-4E82-ADEB-EA3D2654A745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7403F1D1-3A37-4655-8E9D-ACB90CB72A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7403F1D1-3A37-4655-8E9D-ACB90CB72A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7403F1D1-3A37-4655-8E9D-ACB90CB72A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7403F1D1-3A37-4655-8E9D-ACB90CB72A11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54B916A3-368F-4B18-B99A-E2752DD61CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54B916A3-368F-4B18-B99A-E2752DD61CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54B916A3-368F-4B18-B99A-E2752DD61CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54B916A3-368F-4B18-B99A-E2752DD61CE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
