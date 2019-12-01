@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CryptoLib\CryptoLib.csproj">
+      <Project>{54b916a3-368f-4b18-b99a-e2752dd61ce3}</Project>
+      <Name>CryptoLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

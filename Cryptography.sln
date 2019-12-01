@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoWinGUI", "CryptoWinGUI\CryptoWinGUI.csproj", "{7403F1D1-3A37-4655-8E9D-ACB90CB72A11}"
+	ProjectSection(ProjectDependencies) = postProject
+		{54B916A3-368F-4B18-B99A-E2752DD61CE3} = {54B916A3-368F-4B18-B99A-E2752DD61CE3}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoLib", "CryptoLib\CryptoLib.csproj", "{54B916A3-368F-4B18-B99A-E2752DD61CE3}"
 EndProject

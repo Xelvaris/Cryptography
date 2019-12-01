@@ -2,7 +2,7 @@
 
 namespace CryptoLib
 {
-    class Affine
+    public static class Affine
     {
         public static string Encrypt(string text, int a, int b)
         {

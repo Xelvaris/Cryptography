@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CryptoLib
 {
-    class Vigenere
+    public static class Vigenere
     {
         public static string Run(string inputText, string keyword, int mode)
         { 

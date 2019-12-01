@@ -1,6 +1,6 @@
 ﻿namespace CryptoLib
 {
-    class Caesar
+    public static class Caesar
     {
         public static string Encrypt(string input, int shift)
         {
