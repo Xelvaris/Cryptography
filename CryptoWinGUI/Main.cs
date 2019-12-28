@@ -48,11 +48,35 @@ namespace CryptoWinGUI
         private void AffineEncrypt_Click(object sender, EventArgs e)
         {
             string ptext = AffinePlaintext.Text;
+            int b = Convert.ToInt32(AffineB.Value);
+            try {
+                int a = Convert.ToInt32(AffineA.Text);
+                AffineCiphertext.Text = Affine.Encrypt(ptext, a, b);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("You must select a value for 'a'.", "Peramiter Invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void AffineDecrypt_Click(object sender, EventArgs e)
         {
             string ctext = AffineCiphertext.Text;
+            int b = Convert.ToInt32(AffineB.Value);
+            try
+            {
+                int a = Convert.ToInt32(AffineA.Text);
+                AffinePlaintext.Text = Affine.Decrypt(ctext, a, b);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("You must select a value for 'a'.", "Peramiter Invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

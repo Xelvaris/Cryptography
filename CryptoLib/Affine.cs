@@ -45,9 +45,8 @@ namespace CryptoLib
                 {
                     return i;
                 }
-                throw new Exception("No Multiplicative Inverse Found");
             }
-            return -1;
+            throw new Exception("No Multiplicative Inverse Found");
         }
     }
 }

@@ -60,6 +60,10 @@
             this.AffinePlaintext = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.AffineA = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.AffineB = new System.Windows.Forms.NumericUpDown();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -68,6 +72,7 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shiftNumber)).BeginInit();
             this.AffinePage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AffineB)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -326,6 +331,10 @@
             // 
             // AffinePage
             // 
+            this.AffinePage.Controls.Add(this.AffineB);
+            this.AffinePage.Controls.Add(this.label9);
+            this.AffinePage.Controls.Add(this.label8);
+            this.AffinePage.Controls.Add(this.AffineA);
             this.AffinePage.Controls.Add(this.label6);
             this.AffinePage.Controls.Add(this.label7);
             this.AffinePage.Controls.Add(this.AffineDecrypt);
@@ -409,6 +418,69 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
+            // AffineA
+            // 
+            this.AffineA.FormattingEnabled = true;
+            this.AffineA.Items.AddRange(new object[] {
+            "1",
+            "3",
+            "5",
+            "7",
+            "9",
+            "11",
+            "15",
+            "17",
+            "19",
+            "21",
+            "23",
+            "25"});
+            this.AffineA.Location = new System.Drawing.Point(113, 62);
+            this.AffineA.MaxDropDownItems = 12;
+            this.AffineA.Name = "AffineA";
+            this.AffineA.Size = new System.Drawing.Size(37, 21);
+            this.AffineA.TabIndex = 14;
+            this.AffineA.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(96, 65);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(16, 13);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "a:";
+            // 
+            // AffineB
+            // 
+            this.AffineB.Location = new System.Drawing.Point(184, 62);
+            this.AffineB.Maximum = new decimal(new int[] {
+            25,
+            0,
+            0,
+            0});
+            this.AffineB.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.AffineB.Name = "AffineB";
+            this.AffineB.Size = new System.Drawing.Size(40, 20);
+            this.AffineB.TabIndex = 17;
+            this.AffineB.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(166, 65);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(16, 13);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "b:";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -431,6 +503,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.shiftNumber)).EndInit();
             this.AffinePage.ResumeLayout(false);
             this.AffinePage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AffineB)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -469,5 +542,9 @@
         private System.Windows.Forms.Button AffineEncrypt;
         private System.Windows.Forms.TextBox AffineCiphertext;
         private System.Windows.Forms.TextBox AffinePlaintext;
+        private System.Windows.Forms.ComboBox AffineA;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.NumericUpDown AffineB;
+        private System.Windows.Forms.Label label9;
     }
 }
