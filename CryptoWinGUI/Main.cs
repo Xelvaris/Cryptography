@@ -18,40 +18,33 @@ namespace CryptoWinGUI
 
         private void CeasarButton_Click(object sender, EventArgs e)
         {
-            CaesarCiphertext.Text = "";
-            CaesarPlaintext.Text = "";
+            CaesarOutput.Text = "";
+            CaesarInput.Text = "";
             shiftNumber.Value = 1;
             contentPages.SelectTab(0);
         }
 
         private void CaesarEncrypt_Click(object sender, EventArgs e)
         {
-            string ptext = CaesarPlaintext.Text;
-            int shift = Convert.ToInt32(shiftNumber.Value);
-            CaesarCiphertext.Text = Caesar.Encrypt(ptext, shift);
+            CaesarOutput.Text = Caesar.Encrypt(CaesarInput.Text, Convert.ToInt32(shiftNumber.Value));
         }
 
         private void CaesarDecrypt_Click(object sender, EventArgs e)
         {
-            string ctext = CaesarCiphertext.Text;
-            int shift = Convert.ToInt32(shiftNumber.Value);
-            CaesarPlaintext.Text = Caesar.Decrypt(ctext, shift);
+            CaesarOutput.Text = Caesar.Decrypt(CaesarInput.Text, Convert.ToInt32(shiftNumber.Value));
         }
 
         private void AffineButton_Click(object sender, EventArgs e)
         {
-            AffinePlaintext.Text = "";
-            AffineCiphertext.Text = "";
+            AffineInput.Text = "";
+            AffineOutput.Text = "";
             contentPages.SelectTab(1);
         }
 
         private void AffineEncrypt_Click(object sender, EventArgs e)
         {
-            string ptext = AffinePlaintext.Text;
-            int b = Convert.ToInt32(AffineB.Value);
             try {
-                int a = Convert.ToInt32(AffineA.Text);
-                AffineCiphertext.Text = Affine.Encrypt(ptext, a, b);
+                AffineOutput.Text = Affine.Encrypt(AffineInput.Text, Convert.ToInt32(AffineA.Text), Convert.ToInt32(AffineB.Value));
             }
             catch (Exception ex)
             {
@@ -61,12 +54,9 @@ namespace CryptoWinGUI
 
         private void AffineDecrypt_Click(object sender, EventArgs e)
         {
-            string ctext = AffineCiphertext.Text;
-            int b = Convert.ToInt32(AffineB.Value);
             try
             {
-                int a = Convert.ToInt32(AffineA.Text);
-                AffinePlaintext.Text = Affine.Decrypt(ctext, a, b);
+                AffineOutput.Text = Affine.Decrypt(AffineInput.Text, Convert.ToInt32(AffineA.Text), Convert.ToInt32(AffineB.Value));
             }
             catch (Exception ex)
             {
@@ -74,9 +64,22 @@ namespace CryptoWinGUI
             }
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void RailFenceButton_Click(object sender, EventArgs e)
         {
+            RailFenceInput.Text = "";
+            RailFenceOutput.Text = "";
+            Rails.Value = 1;
+            contentPages.SelectTab(2);
+        }
 
+        private void RailFenceEncrypt_Click(object sender, EventArgs e)
+        {
+            RailFenceOutput.Text = RailFence.Encrypt(RailFenceInput.Text, Convert.ToInt32(Rails.Value));
+        }
+
+        private void RailFenceDecrypt_Click(object sender, EventArgs e)
+        {
+            RailFenceOutput.Text = RailFence.Decrypt(RailFenceInput.Text, Convert.ToInt32(Rails.Value));
         }
     }
 }
