@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CryptoLib
 {
     public static class Vigenere
     {
-        public static string Run(string inputText, string keyword, int mode)
+        public static string Run(string inputText, string keyword, char mode)
         { 
             List<char> alphabet =
                 Enumerable.Range('a', 'z' - 'a' + 1)
@@ -23,12 +20,12 @@ namespace CryptoLib
                 alphabet.Insert(alphabet.Count, first);
             }
 
-            if(mode == 1)
+            if (mode == 'e')
             {
                 string cipherText = Encrypt(inputText, tabulaRecta, keyword);
                 return cipherText;
             }
-            else if(mode == 2)
+            else if(mode == 'd')
             {
                 string decipherText = Decrypt(inputText, tabulaRecta, keyword);
             }
