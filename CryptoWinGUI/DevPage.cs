@@ -28,12 +28,26 @@ namespace CryptoWinGUI
 
         private void AffineEncrypt_Click(object sender, EventArgs e)
         {
-            AffineOutput.Text = Affine.Encrypt(AffineInput.Text, Convert.ToInt32(AffineA.Text), Convert.ToInt32(AffineB.Value));
+            try
+            {
+                AffineOutput.Text = Affine.Encrypt(AffineInput.Text, Convert.ToInt32(AffineA.Text), Convert.ToInt32(AffineB.Value));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("You must select a value for 'a'.", "Peramiter Invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void AffineDecrypt_Click(object sender, EventArgs e)
         {
-            AffineOutput.Text = Affine.Decrypt(AffineInput.Text, Convert.ToInt32(AffineA.Text), Convert.ToInt32(AffineB.Value));
+            try
+            {
+                AffineOutput.Text = Affine.Decrypt(AffineInput.Text, Convert.ToInt32(AffineA.Text), Convert.ToInt32(AffineB.Value));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("You must select a value for 'a'.", "Peramiter Invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void RailFenceEncrypt_Click(object sender, EventArgs e)
