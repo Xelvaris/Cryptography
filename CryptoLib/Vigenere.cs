@@ -5,121 +5,57 @@ namespace CryptoLib
 {
     public static class Vigenere
     {
-        public static string Run(string inputText, string keyword, char mode)
-        { 
-            List<char> alphabet =
-                Enumerable.Range('a', 'z' - 'a' + 1)
-                .Select(x => (char)x).ToList();
-
-            char[][] tabulaRecta = new char['z' - 'a' + 1][];
-            for (int i = 0; i < tabulaRecta.Length; i++)
-            {
-                tabulaRecta[i] = alphabet.ToArray();
-                var first = alphabet.First();
-                alphabet.Remove(first);
-                alphabet.Insert(alphabet.Count, first);
-            }
-
-            if (mode == 'e')
-            {
-                string cipherText = Encrypt(inputText, tabulaRecta, keyword);
-                return cipherText;
-            }
-            else if(mode == 'd')
-            {
-                string decipherText = Decrypt(inputText, tabulaRecta, keyword);
-            }
-            return "Error: Invalid mode";  
+        private static int Mod(int a, int b)
+        {
+            return (a % b + b) % b;
         }
 
-        private static string GrowToTextSize(int length, string keyword)
+        private static string Cipher(string input, string key, bool encipher)
         {
-            string result = keyword;
-
-            int idx = 0;
-            while (result.Length < length)
+            if (string.IsNullOrEmpty(key))
             {
-                result += keyword[idx++];
-
-                if (idx >= length)
+                return "Error: You must enter a keyword";
+            }
+            for (int i = 0; i < key.Length; ++i)
+                if (!char.IsLetter(key[i]))
                 {
-                    idx = 0;
+                    return "Error: Non-letter character entered in keyword";
+                }
+
+            string output = string.Empty;
+            int nonAlphaCharCount = 0;
+
+            for (int i = 0; i < input.Length; ++i)
+            {
+                if (char.IsLetter(input[i]))
+                {
+                    bool cIsUpper = char.IsUpper(input[i]);
+                    char offset = cIsUpper ? 'A' : 'a';
+                    int keyIndex = (i - nonAlphaCharCount) % key.Length;
+                    int k = (cIsUpper ? char.ToUpper(key[keyIndex]) : char.ToLower(key[keyIndex])) - offset;
+                    k = encipher ? k : -k;
+                    char ch = (char)((Mod(((input[i] + k) - offset), 26)) + offset);
+                    output += ch;
+                }
+                else
+                {
+                    output += input[i];
+                    ++nonAlphaCharCount;
                 }
             }
 
-            return result;
+            return output;
         }
 
-        private static char[][] TransposeMatrix(char[][] matrix)
+        public static string Encrypt(string input, string key)
         {
-            char[][] result = new char[matrix[0].Length][];
-            for (int i = 0; i < result.Length; i++)
-            {
-                result[i] = new char[matrix.Length];
-            }
-
-            for (int row = 0; row < matrix.Length; row++)
-            {
-                for (int col = 0; col < matrix[row].Length; col++)
-                {
-                    result[col][row] = matrix[row][col];
-                }
-            }
-
-            return result;
+            return Cipher(input, key, true);
         }
 
-        private static int IndexOf(char[] array, char toFind)
+        public static string Decrypt(string input, string key)
         {
-            int result = -1;
-
-            for (int i = 0; i < array.Length; i++)
-            {
-                if (array[i] == toFind)
-                {
-                    result = i;
-                    break;
-                }
-            }
-
-            return result;
+            return Cipher(input, key, false);
         }
-
-        private static string Encrypt(
-            string clearText, char[][] tabulaRecta, string keyword)
-        {
-            string result = string.Empty;
-
-            keyword = GrowToTextSize(clearText.Length, keyword);
-
-            for (int i = 0; i < clearText.Length; i++)
-            {
-                int row = clearText[i] - 'a';
-                int col = keyword[i] - 'a';
-
-                result += tabulaRecta[row][col];
-            }
-
-            return result;
-        }
-
-        private static string Decrypt(
-            string cipherText, char[][] tabulaRecta, string keyword)
-        {
-            string result = string.Empty;
-
-            keyword = GrowToTextSize(cipherText.Length, keyword);
-            tabulaRecta = TransposeMatrix(tabulaRecta);
-
-            for (int i = 0; i < cipherText.Length; i++)
-            {
-                int row = keyword[i] - 'a';
-                int col = IndexOf(tabulaRecta[row], cipherText[i]);
-
-                result += tabulaRecta[0][col];
-            }
-
-            return result;
-        }
+        
     }
 }

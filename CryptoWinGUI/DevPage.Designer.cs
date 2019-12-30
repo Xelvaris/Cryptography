@@ -66,6 +66,14 @@
             this.PageNameLabel = new System.Windows.Forms.Label();
             this.SettingsButton = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.VigenereDecrypt = new System.Windows.Forms.Button();
+            this.VigenereInput = new System.Windows.Forms.TextBox();
+            this.VigenereEncrypt = new System.Windows.Forms.Button();
+            this.VigenereOutput = new System.Windows.Forms.TextBox();
+            this.VigenereKeyword = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.background.SuspendLayout();
             this.CaesarPanel.SuspendLayout();
             this.contentPages.SuspendLayout();
@@ -75,6 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.AffineB)).BeginInit();
             this.RailFencePage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Rails)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.MenuBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -450,12 +459,20 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.label1);
+            this.tabPage3.Controls.Add(this.VigenereKeyword);
+            this.tabPage3.Controls.Add(this.label12);
+            this.tabPage3.Controls.Add(this.label13);
+            this.tabPage3.Controls.Add(this.VigenereDecrypt);
+            this.tabPage3.Controls.Add(this.VigenereInput);
+            this.tabPage3.Controls.Add(this.VigenereEncrypt);
+            this.tabPage3.Controls.Add(this.VigenereOutput);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(769, 435);
             this.tabPage3.TabIndex = 4;
-            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.Text = "Vigenere";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // MenuBar
@@ -504,6 +521,75 @@
             this.CloseButton.UseVisualStyleBackColor = true;
             this.CloseButton.Click += new System.EventHandler(this.HomeButton_Click);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(130, 35);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(34, 13);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "Input:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(130, 119);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(42, 13);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "Output:";
+            // 
+            // VigenereDecrypt
+            // 
+            this.VigenereDecrypt.Location = new System.Drawing.Point(242, 171);
+            this.VigenereDecrypt.Name = "VigenereDecrypt";
+            this.VigenereDecrypt.Size = new System.Drawing.Size(84, 23);
+            this.VigenereDecrypt.TabIndex = 11;
+            this.VigenereDecrypt.Text = "Decrypt";
+            this.VigenereDecrypt.UseVisualStyleBackColor = true;
+            this.VigenereDecrypt.Click += new System.EventHandler(this.VigenereDecrypt_Click);
+            // 
+            // VigenereInput
+            // 
+            this.VigenereInput.Location = new System.Drawing.Point(133, 51);
+            this.VigenereInput.Name = "VigenereInput";
+            this.VigenereInput.Size = new System.Drawing.Size(193, 20);
+            this.VigenereInput.TabIndex = 8;
+            // 
+            // VigenereEncrypt
+            // 
+            this.VigenereEncrypt.Location = new System.Drawing.Point(133, 171);
+            this.VigenereEncrypt.Name = "VigenereEncrypt";
+            this.VigenereEncrypt.Size = new System.Drawing.Size(84, 23);
+            this.VigenereEncrypt.TabIndex = 10;
+            this.VigenereEncrypt.Text = "Encrypt";
+            this.VigenereEncrypt.UseVisualStyleBackColor = true;
+            this.VigenereEncrypt.Click += new System.EventHandler(this.VigenereEncrypt_Click);
+            // 
+            // VigenereOutput
+            // 
+            this.VigenereOutput.Location = new System.Drawing.Point(133, 135);
+            this.VigenereOutput.Name = "VigenereOutput";
+            this.VigenereOutput.ReadOnly = true;
+            this.VigenereOutput.Size = new System.Drawing.Size(193, 20);
+            this.VigenereOutput.TabIndex = 9;
+            // 
+            // VigenereKeyword
+            // 
+            this.VigenereKeyword.Location = new System.Drawing.Point(133, 96);
+            this.VigenereKeyword.Name = "VigenereKeyword";
+            this.VigenereKeyword.Size = new System.Drawing.Size(193, 20);
+            this.VigenereKeyword.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(130, 80);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 13);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Keyword:";
+            // 
             // DevPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -528,6 +614,8 @@
             this.RailFencePage.ResumeLayout(false);
             this.RailFencePage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Rails)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.MenuBar.ResumeLayout(false);
             this.MenuBar.PerformLayout();
             this.ResumeLayout(false);
@@ -573,5 +661,13 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button SettingsButton;
         private System.Windows.Forms.Button CloseButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox VigenereKeyword;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button VigenereDecrypt;
+        private System.Windows.Forms.TextBox VigenereInput;
+        private System.Windows.Forms.Button VigenereEncrypt;
+        private System.Windows.Forms.TextBox VigenereOutput;
     }
 }

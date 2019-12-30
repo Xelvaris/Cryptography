@@ -32,9 +32,9 @@ namespace CryptoWinGUI
             {
                 AffineOutput.Text = Affine.Encrypt(AffineInput.Text, Convert.ToInt32(AffineA.Text), Convert.ToInt32(AffineB.Value));
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show("You must select a value for 'a'.", "Peramiter Invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                AffineOutput.Text = "Error: You must select a value for 'a'";
             }
         }
 
@@ -44,9 +44,9 @@ namespace CryptoWinGUI
             {
                 AffineOutput.Text = Affine.Decrypt(AffineInput.Text, Convert.ToInt32(AffineA.Text), Convert.ToInt32(AffineB.Value));
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show("You must select a value for 'a'.", "Peramiter Invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                AffineOutput.Text = "Error: You must select a value for 'a'";
             }
         }
 
@@ -58,6 +58,16 @@ namespace CryptoWinGUI
         private void RailFenceDecrypt_Click(object sender, EventArgs e)
         {
             RailFenceOutput.Text = RailFence.Decrypt(RailFenceInput.Text, Convert.ToInt32(Rails.Value));
+        }
+
+        private void VigenereEncrypt_Click(object sender, EventArgs e)
+        {
+            VigenereOutput.Text = Vigenere.Encrypt(VigenereInput.Text, VigenereKeyword.Text);
+        }
+
+        private void VigenereDecrypt_Click(object sender, EventArgs e)
+        {
+            VigenereOutput.Text = Vigenere.Decrypt(VigenereInput.Text, VigenereKeyword.Text);
         }
     }
 }
