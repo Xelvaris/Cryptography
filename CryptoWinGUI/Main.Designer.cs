@@ -37,11 +37,11 @@
             this.AffineHMB = new System.Windows.Forms.Button();
             this.RailFenceHMB = new System.Windows.Forms.Button();
             this.MenuBar = new System.Windows.Forms.Panel();
+            this.MinimizeButton = new System.Windows.Forms.Button();
+            this.CloseButton = new System.Windows.Forms.Button();
             this.PageNameLabel = new System.Windows.Forms.Label();
             this.SettingsButton = new System.Windows.Forms.Button();
             this.HomeButton = new System.Windows.Forms.Button();
-            this.CloseButton = new System.Windows.Forms.Button();
-            this.MinimizeButton = new System.Windows.Forms.Button();
             this.background.SuspendLayout();
             this.HomePage.SuspendLayout();
             this.HomePageLayout.SuspendLayout();
@@ -148,6 +148,30 @@
             this.MenuBar.Size = new System.Drawing.Size(1227, 62);
             this.MenuBar.TabIndex = 28;
             // 
+            // MinimizeButton
+            // 
+            this.MinimizeButton.FlatAppearance.BorderSize = 0;
+            this.MinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MinimizeButton.Image = ((System.Drawing.Image)(resources.GetObject("MinimizeButton.Image")));
+            this.MinimizeButton.Location = new System.Drawing.Point(1108, 3);
+            this.MinimizeButton.Name = "MinimizeButton";
+            this.MinimizeButton.Size = new System.Drawing.Size(55, 55);
+            this.MinimizeButton.TabIndex = 4;
+            this.MinimizeButton.UseVisualStyleBackColor = true;
+            this.MinimizeButton.Click += new System.EventHandler(this.MinimizeButton_Click);
+            // 
+            // CloseButton
+            // 
+            this.CloseButton.FlatAppearance.BorderSize = 0;
+            this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CloseButton.Image = ((System.Drawing.Image)(resources.GetObject("CloseButton.Image")));
+            this.CloseButton.Location = new System.Drawing.Point(1169, 3);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(55, 55);
+            this.CloseButton.TabIndex = 3;
+            this.CloseButton.UseVisualStyleBackColor = true;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
+            // 
             // PageNameLabel
             // 
             this.PageNameLabel.AutoSize = true;
@@ -170,6 +194,7 @@
             this.SettingsButton.Size = new System.Drawing.Size(55, 55);
             this.SettingsButton.TabIndex = 1;
             this.SettingsButton.UseVisualStyleBackColor = true;
+            this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
             // 
             // HomeButton
             // 
@@ -181,30 +206,6 @@
             this.HomeButton.Size = new System.Drawing.Size(55, 55);
             this.HomeButton.TabIndex = 0;
             this.HomeButton.UseVisualStyleBackColor = true;
-            // 
-            // CloseButton
-            // 
-            this.CloseButton.FlatAppearance.BorderSize = 0;
-            this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CloseButton.Image = ((System.Drawing.Image)(resources.GetObject("CloseButton.Image")));
-            this.CloseButton.Location = new System.Drawing.Point(1169, 3);
-            this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(55, 55);
-            this.CloseButton.TabIndex = 3;
-            this.CloseButton.UseVisualStyleBackColor = true;
-            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
-            // 
-            // MinimizeButton
-            // 
-            this.MinimizeButton.FlatAppearance.BorderSize = 0;
-            this.MinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MinimizeButton.Image = ((System.Drawing.Image)(resources.GetObject("MinimizeButton.Image")));
-            this.MinimizeButton.Location = new System.Drawing.Point(1108, 3);
-            this.MinimizeButton.Name = "MinimizeButton";
-            this.MinimizeButton.Size = new System.Drawing.Size(55, 55);
-            this.MinimizeButton.TabIndex = 4;
-            this.MinimizeButton.UseVisualStyleBackColor = true;
-            this.MinimizeButton.Click += new System.EventHandler(this.MinimizeButton_Click);
             // 
             // Main
             // 

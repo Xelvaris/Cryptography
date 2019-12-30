@@ -32,5 +32,10 @@ namespace CryptoWinGUI
         {
             WindowState = FormWindowState.Minimized;
         }
+
+        private void SettingsButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
