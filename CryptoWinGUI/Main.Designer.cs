@@ -42,6 +42,7 @@
             this.PageNameLabel = new System.Windows.Forms.Label();
             this.SettingsButton = new System.Windows.Forms.Button();
             this.HomeButton = new System.Windows.Forms.Button();
+            this.PlayfairHMB = new System.Windows.Forms.Button();
             this.background.SuspendLayout();
             this.HomePage.SuspendLayout();
             this.HomePageLayout.SuspendLayout();
@@ -73,9 +74,10 @@
             this.HomePageLayout.Controls.Add(this.CaesarHMB);
             this.HomePageLayout.Controls.Add(this.AffineHMB);
             this.HomePageLayout.Controls.Add(this.RailFenceHMB);
-            this.HomePageLayout.Location = new System.Drawing.Point(3, 2);
+            this.HomePageLayout.Controls.Add(this.PlayfairHMB);
+            this.HomePageLayout.Location = new System.Drawing.Point(13, 2);
             this.HomePageLayout.Name = "HomePageLayout";
-            this.HomePageLayout.Size = new System.Drawing.Size(1221, 610);
+            this.HomePageLayout.Size = new System.Drawing.Size(1211, 610);
             this.HomePageLayout.TabIndex = 0;
             // 
             // DevPageHMB
@@ -87,7 +89,7 @@
             this.DevPageHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
             this.DevPageHMB.Location = new System.Drawing.Point(3, 3);
             this.DevPageHMB.Name = "DevPageHMB";
-            this.DevPageHMB.Size = new System.Drawing.Size(235, 235);
+            this.DevPageHMB.Size = new System.Drawing.Size(230, 230);
             this.DevPageHMB.TabIndex = 38;
             this.DevPageHMB.Text = "Dev Page";
             this.DevPageHMB.UseVisualStyleBackColor = false;
@@ -100,9 +102,9 @@
             this.CaesarHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CaesarHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.CaesarHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.CaesarHMB.Location = new System.Drawing.Point(244, 3);
+            this.CaesarHMB.Location = new System.Drawing.Point(239, 3);
             this.CaesarHMB.Name = "CaesarHMB";
-            this.CaesarHMB.Size = new System.Drawing.Size(235, 235);
+            this.CaesarHMB.Size = new System.Drawing.Size(230, 230);
             this.CaesarHMB.TabIndex = 35;
             this.CaesarHMB.Text = "Caesar Cipher";
             this.CaesarHMB.UseVisualStyleBackColor = false;
@@ -114,9 +116,9 @@
             this.AffineHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AffineHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.AffineHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.AffineHMB.Location = new System.Drawing.Point(485, 3);
+            this.AffineHMB.Location = new System.Drawing.Point(475, 3);
             this.AffineHMB.Name = "AffineHMB";
-            this.AffineHMB.Size = new System.Drawing.Size(235, 235);
+            this.AffineHMB.Size = new System.Drawing.Size(230, 230);
             this.AffineHMB.TabIndex = 36;
             this.AffineHMB.Text = "Affine Cipher";
             this.AffineHMB.UseVisualStyleBackColor = false;
@@ -128,9 +130,9 @@
             this.RailFenceHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RailFenceHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.RailFenceHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.RailFenceHMB.Location = new System.Drawing.Point(726, 3);
+            this.RailFenceHMB.Location = new System.Drawing.Point(711, 3);
             this.RailFenceHMB.Name = "RailFenceHMB";
-            this.RailFenceHMB.Size = new System.Drawing.Size(235, 235);
+            this.RailFenceHMB.Size = new System.Drawing.Size(230, 230);
             this.RailFenceHMB.TabIndex = 37;
             this.RailFenceHMB.Text = "Rail-Fence Cipher";
             this.RailFenceHMB.UseVisualStyleBackColor = false;
@@ -207,6 +209,20 @@
             this.HomeButton.TabIndex = 0;
             this.HomeButton.UseVisualStyleBackColor = true;
             // 
+            // PlayfairHMB
+            // 
+            this.PlayfairHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
+            this.PlayfairHMB.FlatAppearance.BorderSize = 0;
+            this.PlayfairHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PlayfairHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.PlayfairHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.PlayfairHMB.Location = new System.Drawing.Point(947, 3);
+            this.PlayfairHMB.Name = "PlayfairHMB";
+            this.PlayfairHMB.Size = new System.Drawing.Size(230, 230);
+            this.PlayfairHMB.TabIndex = 39;
+            this.PlayfairHMB.Text = "Playfair Cipher";
+            this.PlayfairHMB.UseVisualStyleBackColor = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,5 +259,6 @@
         private System.Windows.Forms.Button DevPageHMB;
         private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.Button MinimizeButton;
+        private System.Windows.Forms.Button PlayfairHMB;
     }
 }
