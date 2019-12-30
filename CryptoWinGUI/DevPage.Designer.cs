@@ -31,18 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DevPage));
             this.background = new System.Windows.Forms.Panel();
             this.CaesarPanel = new System.Windows.Forms.Panel();
-            this.MenuBar = new System.Windows.Forms.Panel();
-            this.PageNameLabel = new System.Windows.Forms.Label();
             this.contentPages = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.shiftNumber = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.CaesarDecrypt = new System.Windows.Forms.Button();
+            this.CaesarInput = new System.Windows.Forms.TextBox();
             this.CaesarEncrypt = new System.Windows.Forms.Button();
             this.CaesarOutput = new System.Windows.Forms.TextBox();
-            this.CaesarInput = new System.Windows.Forms.TextBox();
             this.AffinePage = new System.Windows.Forms.TabPage();
             this.AffineB = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
@@ -64,11 +62,12 @@
             this.RailFenceOutput = new System.Windows.Forms.TextBox();
             this.RailFenceInput = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.MenuBar = new System.Windows.Forms.Panel();
+            this.PageNameLabel = new System.Windows.Forms.Label();
             this.SettingsButton = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
             this.background.SuspendLayout();
             this.CaesarPanel.SuspendLayout();
-            this.MenuBar.SuspendLayout();
             this.contentPages.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shiftNumber)).BeginInit();
@@ -76,6 +75,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.AffineB)).BeginInit();
             this.RailFencePage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Rails)).BeginInit();
+            this.MenuBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // background
@@ -95,29 +95,6 @@
             this.CaesarPanel.Name = "CaesarPanel";
             this.CaesarPanel.Size = new System.Drawing.Size(1227, 612);
             this.CaesarPanel.TabIndex = 29;
-            // 
-            // MenuBar
-            // 
-            this.MenuBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.MenuBar.Controls.Add(this.PageNameLabel);
-            this.MenuBar.Controls.Add(this.SettingsButton);
-            this.MenuBar.Controls.Add(this.CloseButton);
-            this.MenuBar.Location = new System.Drawing.Point(-1, -1);
-            this.MenuBar.Name = "MenuBar";
-            this.MenuBar.Size = new System.Drawing.Size(1227, 62);
-            this.MenuBar.TabIndex = 28;
-            // 
-            // PageNameLabel
-            // 
-            this.PageNameLabel.AutoSize = true;
-            this.PageNameLabel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.PageNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.PageNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.PageNameLabel.Location = new System.Drawing.Point(65, 11);
-            this.PageNameLabel.Name = "PageNameLabel";
-            this.PageNameLabel.Size = new System.Drawing.Size(194, 46);
-            this.PageNameLabel.TabIndex = 2;
-            this.PageNameLabel.Text = "Dev Page";
             // 
             // contentPages
             // 
@@ -181,15 +158,6 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Shift:";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(38, 80);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Output:";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -199,6 +167,15 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Input:";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(38, 80);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(42, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Output:";
+            // 
             // CaesarDecrypt
             // 
             this.CaesarDecrypt.Location = new System.Drawing.Point(150, 132);
@@ -207,6 +184,14 @@
             this.CaesarDecrypt.TabIndex = 3;
             this.CaesarDecrypt.Text = "Decrypt";
             this.CaesarDecrypt.UseVisualStyleBackColor = true;
+            this.CaesarDecrypt.Click += new System.EventHandler(this.CaesarDecrypt_Click);
+            // 
+            // CaesarInput
+            // 
+            this.CaesarInput.Location = new System.Drawing.Point(41, 50);
+            this.CaesarInput.Name = "CaesarInput";
+            this.CaesarInput.Size = new System.Drawing.Size(193, 20);
+            this.CaesarInput.TabIndex = 0;
             // 
             // CaesarEncrypt
             // 
@@ -216,6 +201,7 @@
             this.CaesarEncrypt.TabIndex = 2;
             this.CaesarEncrypt.Text = "Encrypt";
             this.CaesarEncrypt.UseVisualStyleBackColor = true;
+            this.CaesarEncrypt.Click += new System.EventHandler(this.CaesarEncrypt_Click);
             // 
             // CaesarOutput
             // 
@@ -224,13 +210,6 @@
             this.CaesarOutput.ReadOnly = true;
             this.CaesarOutput.Size = new System.Drawing.Size(193, 20);
             this.CaesarOutput.TabIndex = 1;
-            // 
-            // CaesarInput
-            // 
-            this.CaesarInput.Location = new System.Drawing.Point(41, 50);
-            this.CaesarInput.Name = "CaesarInput";
-            this.CaesarInput.Size = new System.Drawing.Size(193, 20);
-            this.CaesarInput.TabIndex = 0;
             // 
             // AffinePage
             // 
@@ -247,7 +226,7 @@
             this.AffinePage.Location = new System.Drawing.Point(4, 22);
             this.AffinePage.Name = "AffinePage";
             this.AffinePage.Padding = new System.Windows.Forms.Padding(3);
-            this.AffinePage.Size = new System.Drawing.Size(72, 32);
+            this.AffinePage.Size = new System.Drawing.Size(769, 435);
             this.AffinePage.TabIndex = 2;
             this.AffinePage.Text = "Affine";
             this.AffinePage.UseVisualStyleBackColor = true;
@@ -340,6 +319,7 @@
             this.AffineDecrypt.TabIndex = 11;
             this.AffineDecrypt.Text = "Decrypt";
             this.AffineDecrypt.UseVisualStyleBackColor = true;
+            this.AffineDecrypt.Click += new System.EventHandler(this.AffineDecrypt_Click);
             // 
             // AffineEncrypt
             // 
@@ -349,6 +329,7 @@
             this.AffineEncrypt.TabIndex = 10;
             this.AffineEncrypt.Text = "Encrypt";
             this.AffineEncrypt.UseVisualStyleBackColor = true;
+            this.AffineEncrypt.Click += new System.EventHandler(this.AffineEncrypt_Click);
             // 
             // AffineOutput
             // 
@@ -378,7 +359,7 @@
             this.RailFencePage.Location = new System.Drawing.Point(4, 22);
             this.RailFencePage.Name = "RailFencePage";
             this.RailFencePage.Padding = new System.Windows.Forms.Padding(3);
-            this.RailFencePage.Size = new System.Drawing.Size(72, 32);
+            this.RailFencePage.Size = new System.Drawing.Size(769, 435);
             this.RailFencePage.TabIndex = 3;
             this.RailFencePage.Text = "Rail-Fence";
             this.RailFencePage.UseVisualStyleBackColor = true;
@@ -440,6 +421,7 @@
             this.RailFenceDecrypt.TabIndex = 11;
             this.RailFenceDecrypt.Text = "Decrypt";
             this.RailFenceDecrypt.UseVisualStyleBackColor = true;
+            this.RailFenceDecrypt.Click += new System.EventHandler(this.RailFenceDecrypt_Click);
             // 
             // RailFenceEncrypt
             // 
@@ -449,6 +431,7 @@
             this.RailFenceEncrypt.TabIndex = 10;
             this.RailFenceEncrypt.Text = "Encrypt";
             this.RailFenceEncrypt.UseVisualStyleBackColor = true;
+            this.RailFenceEncrypt.Click += new System.EventHandler(this.RailFenceEncrypt_Click);
             // 
             // RailFenceOutput
             // 
@@ -470,10 +453,33 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(72, 32);
+            this.tabPage3.Size = new System.Drawing.Size(769, 435);
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // MenuBar
+            // 
+            this.MenuBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.MenuBar.Controls.Add(this.PageNameLabel);
+            this.MenuBar.Controls.Add(this.SettingsButton);
+            this.MenuBar.Controls.Add(this.CloseButton);
+            this.MenuBar.Location = new System.Drawing.Point(-1, -1);
+            this.MenuBar.Name = "MenuBar";
+            this.MenuBar.Size = new System.Drawing.Size(1227, 62);
+            this.MenuBar.TabIndex = 28;
+            // 
+            // PageNameLabel
+            // 
+            this.PageNameLabel.AutoSize = true;
+            this.PageNameLabel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.PageNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.PageNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.PageNameLabel.Location = new System.Drawing.Point(65, 11);
+            this.PageNameLabel.Name = "PageNameLabel";
+            this.PageNameLabel.Size = new System.Drawing.Size(194, 46);
+            this.PageNameLabel.TabIndex = 2;
+            this.PageNameLabel.Text = "Dev Page";
             // 
             // SettingsButton
             // 
@@ -512,8 +518,6 @@
             this.Text = "Caesar Cipher";
             this.background.ResumeLayout(false);
             this.CaesarPanel.ResumeLayout(false);
-            this.MenuBar.ResumeLayout(false);
-            this.MenuBar.PerformLayout();
             this.contentPages.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -524,6 +528,8 @@
             this.RailFencePage.ResumeLayout(false);
             this.RailFencePage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Rails)).EndInit();
+            this.MenuBar.ResumeLayout(false);
+            this.MenuBar.PerformLayout();
             this.ResumeLayout(false);
 
         }
