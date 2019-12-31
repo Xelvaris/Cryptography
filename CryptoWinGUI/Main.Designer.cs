@@ -36,13 +36,13 @@
             this.CaesarHMB = new System.Windows.Forms.Button();
             this.AffineHMB = new System.Windows.Forms.Button();
             this.RailFenceHMB = new System.Windows.Forms.Button();
+            this.PlayfairHMB = new System.Windows.Forms.Button();
             this.MenuBar = new System.Windows.Forms.Panel();
             this.MinimizeButton = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
             this.PageNameLabel = new System.Windows.Forms.Label();
             this.SettingsButton = new System.Windows.Forms.Button();
             this.HomeButton = new System.Windows.Forms.Button();
-            this.PlayfairHMB = new System.Windows.Forms.Button();
             this.background.SuspendLayout();
             this.HomePage.SuspendLayout();
             this.HomePageLayout.SuspendLayout();
@@ -137,6 +137,20 @@
             this.RailFenceHMB.Text = "Rail-Fence Cipher";
             this.RailFenceHMB.UseVisualStyleBackColor = false;
             // 
+            // PlayfairHMB
+            // 
+            this.PlayfairHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
+            this.PlayfairHMB.FlatAppearance.BorderSize = 0;
+            this.PlayfairHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PlayfairHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.PlayfairHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.PlayfairHMB.Location = new System.Drawing.Point(947, 3);
+            this.PlayfairHMB.Name = "PlayfairHMB";
+            this.PlayfairHMB.Size = new System.Drawing.Size(230, 230);
+            this.PlayfairHMB.TabIndex = 39;
+            this.PlayfairHMB.Text = "Playfair Cipher";
+            this.PlayfairHMB.UseVisualStyleBackColor = false;
+            // 
             // MenuBar
             // 
             this.MenuBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -208,20 +222,6 @@
             this.HomeButton.Size = new System.Drawing.Size(55, 55);
             this.HomeButton.TabIndex = 0;
             this.HomeButton.UseVisualStyleBackColor = true;
-            // 
-            // PlayfairHMB
-            // 
-            this.PlayfairHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
-            this.PlayfairHMB.FlatAppearance.BorderSize = 0;
-            this.PlayfairHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PlayfairHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.PlayfairHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.PlayfairHMB.Location = new System.Drawing.Point(947, 3);
-            this.PlayfairHMB.Name = "PlayfairHMB";
-            this.PlayfairHMB.Size = new System.Drawing.Size(230, 230);
-            this.PlayfairHMB.TabIndex = 39;
-            this.PlayfairHMB.Text = "Playfair Cipher";
-            this.PlayfairHMB.UseVisualStyleBackColor = false;
             // 
             // Main
             // 

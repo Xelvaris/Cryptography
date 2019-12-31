@@ -69,5 +69,15 @@ namespace CryptoWinGUI
         {
             VigenereOutput.Text = Vigenere.Decrypt(VigenereInput.Text, VigenereKeyword.Text);
         }
+
+        private void PlayfairEncrypt_Click(object sender, EventArgs e)
+        {
+            PlayfairOutput.Text = Playfair.Encrypt(PlayfairInput.Text, PlayfairKeyword.Text);
+        }
+
+        private void PlayfairDecrypt_Click(object sender, EventArgs e)
+        {
+            PlayfairOutput.Text = Playfair.Decrypt(PlayfairInput.Text, PlayfairKeyword.Text);
+        }
     }
 }

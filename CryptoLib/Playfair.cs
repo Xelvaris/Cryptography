@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CryptoLib
 {
-    class Playfair
+    public static class Playfair
     {
 		private static int Mod(int a, int b)
 		{
@@ -163,11 +163,19 @@ namespace CryptoLib
 
 		public static string Encrypt(string input, string key)
 		{
+			if (string.IsNullOrEmpty(key))
+			{
+				return "Error: You must enter a keyword";
+			}
 			return Cipher(input, key, true);
 		}
 
 		public static string Decrypt(string input, string key)
 		{
+			if (string.IsNullOrEmpty(key))
+			{
+				return "Error: You must enter a keyword";
+			}
 			return Cipher(input, key, false);
 		}
 	}

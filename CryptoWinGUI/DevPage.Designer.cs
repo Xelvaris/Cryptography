@@ -62,18 +62,27 @@
             this.RailFenceOutput = new System.Windows.Forms.TextBox();
             this.RailFenceInput = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.MenuBar = new System.Windows.Forms.Panel();
-            this.PageNameLabel = new System.Windows.Forms.Label();
-            this.SettingsButton = new System.Windows.Forms.Button();
-            this.CloseButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.VigenereKeyword = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.VigenereDecrypt = new System.Windows.Forms.Button();
             this.VigenereInput = new System.Windows.Forms.TextBox();
             this.VigenereEncrypt = new System.Windows.Forms.Button();
             this.VigenereOutput = new System.Windows.Forms.TextBox();
-            this.VigenereKeyword = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.MenuBar = new System.Windows.Forms.Panel();
+            this.PageNameLabel = new System.Windows.Forms.Label();
+            this.SettingsButton = new System.Windows.Forms.Button();
+            this.CloseButton = new System.Windows.Forms.Button();
+            this.PlayfairPage = new System.Windows.Forms.TabPage();
+            this.label14 = new System.Windows.Forms.Label();
+            this.PlayfairKeyword = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.PlayfairDecrypt = new System.Windows.Forms.Button();
+            this.PlayfairInput = new System.Windows.Forms.TextBox();
+            this.PlayfairEncrypt = new System.Windows.Forms.Button();
+            this.PlayfairOutput = new System.Windows.Forms.TextBox();
             this.background.SuspendLayout();
             this.CaesarPanel.SuspendLayout();
             this.contentPages.SuspendLayout();
@@ -85,6 +94,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Rails)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.MenuBar.SuspendLayout();
+            this.PlayfairPage.SuspendLayout();
             this.SuspendLayout();
             // 
             // background
@@ -111,6 +121,7 @@
             this.contentPages.Controls.Add(this.AffinePage);
             this.contentPages.Controls.Add(this.RailFencePage);
             this.contentPages.Controls.Add(this.tabPage3);
+            this.contentPages.Controls.Add(this.PlayfairPage);
             this.contentPages.Location = new System.Drawing.Point(130, 25);
             this.contentPages.Name = "contentPages";
             this.contentPages.SelectedIndex = 0;
@@ -475,51 +486,21 @@
             this.tabPage3.Text = "Vigenere";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // MenuBar
+            // label1
             // 
-            this.MenuBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.MenuBar.Controls.Add(this.PageNameLabel);
-            this.MenuBar.Controls.Add(this.SettingsButton);
-            this.MenuBar.Controls.Add(this.CloseButton);
-            this.MenuBar.Location = new System.Drawing.Point(-1, -1);
-            this.MenuBar.Name = "MenuBar";
-            this.MenuBar.Size = new System.Drawing.Size(1227, 62);
-            this.MenuBar.TabIndex = 28;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(130, 80);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 13);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Keyword:";
             // 
-            // PageNameLabel
+            // VigenereKeyword
             // 
-            this.PageNameLabel.AutoSize = true;
-            this.PageNameLabel.Cursor = System.Windows.Forms.Cursors.Default;
-            this.PageNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.PageNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.PageNameLabel.Location = new System.Drawing.Point(65, 11);
-            this.PageNameLabel.Name = "PageNameLabel";
-            this.PageNameLabel.Size = new System.Drawing.Size(194, 46);
-            this.PageNameLabel.TabIndex = 2;
-            this.PageNameLabel.Text = "Dev Page";
-            // 
-            // SettingsButton
-            // 
-            this.SettingsButton.FlatAppearance.BorderSize = 0;
-            this.SettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SettingsButton.Image = ((System.Drawing.Image)(resources.GetObject("SettingsButton.Image")));
-            this.SettingsButton.Location = new System.Drawing.Point(1166, 4);
-            this.SettingsButton.Name = "SettingsButton";
-            this.SettingsButton.Size = new System.Drawing.Size(55, 55);
-            this.SettingsButton.TabIndex = 1;
-            this.SettingsButton.UseVisualStyleBackColor = true;
-            // 
-            // CloseButton
-            // 
-            this.CloseButton.FlatAppearance.BorderSize = 0;
-            this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CloseButton.Image = ((System.Drawing.Image)(resources.GetObject("CloseButton.Image")));
-            this.CloseButton.Location = new System.Drawing.Point(4, 3);
-            this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(55, 55);
-            this.CloseButton.TabIndex = 0;
-            this.CloseButton.UseVisualStyleBackColor = true;
-            this.CloseButton.Click += new System.EventHandler(this.HomeButton_Click);
+            this.VigenereKeyword.Location = new System.Drawing.Point(133, 96);
+            this.VigenereKeyword.Name = "VigenereKeyword";
+            this.VigenereKeyword.Size = new System.Drawing.Size(193, 20);
+            this.VigenereKeyword.TabIndex = 14;
             // 
             // label12
             // 
@@ -574,21 +555,138 @@
             this.VigenereOutput.Size = new System.Drawing.Size(193, 20);
             this.VigenereOutput.TabIndex = 9;
             // 
-            // VigenereKeyword
+            // MenuBar
             // 
-            this.VigenereKeyword.Location = new System.Drawing.Point(133, 96);
-            this.VigenereKeyword.Name = "VigenereKeyword";
-            this.VigenereKeyword.Size = new System.Drawing.Size(193, 20);
-            this.VigenereKeyword.TabIndex = 14;
+            this.MenuBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.MenuBar.Controls.Add(this.PageNameLabel);
+            this.MenuBar.Controls.Add(this.SettingsButton);
+            this.MenuBar.Controls.Add(this.CloseButton);
+            this.MenuBar.Location = new System.Drawing.Point(-1, -1);
+            this.MenuBar.Name = "MenuBar";
+            this.MenuBar.Size = new System.Drawing.Size(1227, 62);
+            this.MenuBar.TabIndex = 28;
             // 
-            // label1
+            // PageNameLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(130, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 13);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Keyword:";
+            this.PageNameLabel.AutoSize = true;
+            this.PageNameLabel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.PageNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.PageNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.PageNameLabel.Location = new System.Drawing.Point(65, 11);
+            this.PageNameLabel.Name = "PageNameLabel";
+            this.PageNameLabel.Size = new System.Drawing.Size(194, 46);
+            this.PageNameLabel.TabIndex = 2;
+            this.PageNameLabel.Text = "Dev Page";
+            // 
+            // SettingsButton
+            // 
+            this.SettingsButton.FlatAppearance.BorderSize = 0;
+            this.SettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SettingsButton.Image = ((System.Drawing.Image)(resources.GetObject("SettingsButton.Image")));
+            this.SettingsButton.Location = new System.Drawing.Point(1166, 4);
+            this.SettingsButton.Name = "SettingsButton";
+            this.SettingsButton.Size = new System.Drawing.Size(55, 55);
+            this.SettingsButton.TabIndex = 1;
+            this.SettingsButton.UseVisualStyleBackColor = true;
+            // 
+            // CloseButton
+            // 
+            this.CloseButton.FlatAppearance.BorderSize = 0;
+            this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CloseButton.Image = ((System.Drawing.Image)(resources.GetObject("CloseButton.Image")));
+            this.CloseButton.Location = new System.Drawing.Point(4, 3);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(55, 55);
+            this.CloseButton.TabIndex = 0;
+            this.CloseButton.UseVisualStyleBackColor = true;
+            this.CloseButton.Click += new System.EventHandler(this.HomeButton_Click);
+            // 
+            // PlayfairPage
+            // 
+            this.PlayfairPage.Controls.Add(this.label14);
+            this.PlayfairPage.Controls.Add(this.PlayfairKeyword);
+            this.PlayfairPage.Controls.Add(this.label15);
+            this.PlayfairPage.Controls.Add(this.label16);
+            this.PlayfairPage.Controls.Add(this.PlayfairDecrypt);
+            this.PlayfairPage.Controls.Add(this.PlayfairInput);
+            this.PlayfairPage.Controls.Add(this.PlayfairEncrypt);
+            this.PlayfairPage.Controls.Add(this.PlayfairOutput);
+            this.PlayfairPage.Location = new System.Drawing.Point(4, 22);
+            this.PlayfairPage.Name = "PlayfairPage";
+            this.PlayfairPage.Padding = new System.Windows.Forms.Padding(3);
+            this.PlayfairPage.Size = new System.Drawing.Size(769, 435);
+            this.PlayfairPage.TabIndex = 5;
+            this.PlayfairPage.Text = "Playfair";
+            this.PlayfairPage.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(286, 183);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(51, 13);
+            this.label14.TabIndex = 23;
+            this.label14.Text = "Keyword:";
+            // 
+            // PlayfairKeyword
+            // 
+            this.PlayfairKeyword.Location = new System.Drawing.Point(289, 199);
+            this.PlayfairKeyword.Name = "PlayfairKeyword";
+            this.PlayfairKeyword.Size = new System.Drawing.Size(193, 20);
+            this.PlayfairKeyword.TabIndex = 22;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(286, 138);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(34, 13);
+            this.label15.TabIndex = 20;
+            this.label15.Text = "Input:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(286, 222);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(42, 13);
+            this.label16.TabIndex = 21;
+            this.label16.Text = "Output:";
+            // 
+            // PlayfairDecrypt
+            // 
+            this.PlayfairDecrypt.Location = new System.Drawing.Point(398, 274);
+            this.PlayfairDecrypt.Name = "PlayfairDecrypt";
+            this.PlayfairDecrypt.Size = new System.Drawing.Size(84, 23);
+            this.PlayfairDecrypt.TabIndex = 19;
+            this.PlayfairDecrypt.Text = "Decrypt";
+            this.PlayfairDecrypt.UseVisualStyleBackColor = true;
+            this.PlayfairDecrypt.Click += new System.EventHandler(this.PlayfairDecrypt_Click);
+            // 
+            // PlayfairInput
+            // 
+            this.PlayfairInput.Location = new System.Drawing.Point(289, 154);
+            this.PlayfairInput.Name = "PlayfairInput";
+            this.PlayfairInput.Size = new System.Drawing.Size(193, 20);
+            this.PlayfairInput.TabIndex = 16;
+            // 
+            // PlayfairEncrypt
+            // 
+            this.PlayfairEncrypt.Location = new System.Drawing.Point(289, 274);
+            this.PlayfairEncrypt.Name = "PlayfairEncrypt";
+            this.PlayfairEncrypt.Size = new System.Drawing.Size(84, 23);
+            this.PlayfairEncrypt.TabIndex = 18;
+            this.PlayfairEncrypt.Text = "Encrypt";
+            this.PlayfairEncrypt.UseVisualStyleBackColor = true;
+            this.PlayfairEncrypt.Click += new System.EventHandler(this.PlayfairEncrypt_Click);
+            // 
+            // PlayfairOutput
+            // 
+            this.PlayfairOutput.Location = new System.Drawing.Point(289, 238);
+            this.PlayfairOutput.Name = "PlayfairOutput";
+            this.PlayfairOutput.ReadOnly = true;
+            this.PlayfairOutput.Size = new System.Drawing.Size(193, 20);
+            this.PlayfairOutput.TabIndex = 17;
             // 
             // DevPage
             // 
@@ -618,6 +716,8 @@
             this.tabPage3.PerformLayout();
             this.MenuBar.ResumeLayout(false);
             this.MenuBar.PerformLayout();
+            this.PlayfairPage.ResumeLayout(false);
+            this.PlayfairPage.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -669,5 +769,14 @@
         private System.Windows.Forms.TextBox VigenereInput;
         private System.Windows.Forms.Button VigenereEncrypt;
         private System.Windows.Forms.TextBox VigenereOutput;
+        private System.Windows.Forms.TabPage PlayfairPage;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox PlayfairKeyword;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button PlayfairDecrypt;
+        private System.Windows.Forms.TextBox PlayfairInput;
+        private System.Windows.Forms.Button PlayfairEncrypt;
+        private System.Windows.Forms.TextBox PlayfairOutput;
     }
 }
