@@ -6,12 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoWinGUI", "CryptoWinGUI\CryptoWinGUI.csproj", "{7403F1D1-3A37-4655-8E9D-ACB90CB72A11}"
 	ProjectSection(ProjectDependencies) = postProject
 		{54B916A3-368F-4B18-B99A-E2752DD61CE3} = {54B916A3-368F-4B18-B99A-E2752DD61CE3}
-		{E4E3A7E0-AC86-44A2-A959-56057611069F} = {E4E3A7E0-AC86-44A2-A959-56057611069F}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoLib", "CryptoLib\CryptoLib.csproj", "{54B916A3-368F-4B18-B99A-E2752DD61CE3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoEnigma", "CryptoEnigma\CryptoEnigma.csproj", "{E4E3A7E0-AC86-44A2-A959-56057611069F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +24,6 @@ Global
 		{54B916A3-368F-4B18-B99A-E2752DD61CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54B916A3-368F-4B18-B99A-E2752DD61CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54B916A3-368F-4B18-B99A-E2752DD61CE3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E4E3A7E0-AC86-44A2-A959-56057611069F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E4E3A7E0-AC86-44A2-A959-56057611069F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E4E3A7E0-AC86-44A2-A959-56057611069F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E4E3A7E0-AC86-44A2-A959-56057611069F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
