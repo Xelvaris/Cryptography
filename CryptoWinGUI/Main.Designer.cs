@@ -33,17 +33,25 @@
             this.HomePage = new System.Windows.Forms.Panel();
             this.HomePageLayout = new System.Windows.Forms.FlowLayoutPanel();
             this.DevPageHMB = new System.Windows.Forms.Button();
+            this.CiphersHMB = new System.Windows.Forms.Button();
             this.CaesarHMB = new System.Windows.Forms.Button();
             this.AffineHMB = new System.Windows.Forms.Button();
             this.RailFenceHMB = new System.Windows.Forms.Button();
             this.PlayfairHMB = new System.Windows.Forms.Button();
+            this.EnigmaHMB = new System.Windows.Forms.Button();
+            this.AlgorithmsHMB = new System.Windows.Forms.Button();
+            this.DesHMB = new System.Windows.Forms.Button();
+            this.RsaHMB = new System.Windows.Forms.Button();
+            this.AesHMB = new System.Windows.Forms.Button();
+            this.HashesHMB = new System.Windows.Forms.Button();
+            this.ShaHMB = new System.Windows.Forms.Button();
+            this.MdHMB = new System.Windows.Forms.Button();
             this.MenuBar = new System.Windows.Forms.Panel();
             this.MinimizeButton = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
             this.PageNameLabel = new System.Windows.Forms.Label();
             this.SettingsButton = new System.Windows.Forms.Button();
             this.HomeButton = new System.Windows.Forms.Button();
-            this.EnigmaHMB = new System.Windows.Forms.Button();
             this.background.SuspendLayout();
             this.HomePage.SuspendLayout();
             this.HomePageLayout.SuspendLayout();
@@ -72,11 +80,19 @@
             // 
             this.HomePageLayout.AutoScroll = true;
             this.HomePageLayout.Controls.Add(this.DevPageHMB);
+            this.HomePageLayout.Controls.Add(this.CiphersHMB);
             this.HomePageLayout.Controls.Add(this.CaesarHMB);
             this.HomePageLayout.Controls.Add(this.AffineHMB);
             this.HomePageLayout.Controls.Add(this.RailFenceHMB);
             this.HomePageLayout.Controls.Add(this.PlayfairHMB);
             this.HomePageLayout.Controls.Add(this.EnigmaHMB);
+            this.HomePageLayout.Controls.Add(this.AlgorithmsHMB);
+            this.HomePageLayout.Controls.Add(this.DesHMB);
+            this.HomePageLayout.Controls.Add(this.RsaHMB);
+            this.HomePageLayout.Controls.Add(this.AesHMB);
+            this.HomePageLayout.Controls.Add(this.HashesHMB);
+            this.HomePageLayout.Controls.Add(this.ShaHMB);
+            this.HomePageLayout.Controls.Add(this.MdHMB);
             this.HomePageLayout.Location = new System.Drawing.Point(13, 2);
             this.HomePageLayout.Name = "HomePageLayout";
             this.HomePageLayout.Size = new System.Drawing.Size(1211, 610);
@@ -97,6 +113,20 @@
             this.DevPageHMB.UseVisualStyleBackColor = false;
             this.DevPageHMB.Click += new System.EventHandler(this.DevPageHMB_Click);
             // 
+            // CiphersHMB
+            // 
+            this.CiphersHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
+            this.CiphersHMB.FlatAppearance.BorderSize = 0;
+            this.CiphersHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CiphersHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.CiphersHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.CiphersHMB.Location = new System.Drawing.Point(239, 3);
+            this.CiphersHMB.Name = "CiphersHMB";
+            this.CiphersHMB.Size = new System.Drawing.Size(230, 230);
+            this.CiphersHMB.TabIndex = 46;
+            this.CiphersHMB.Text = "Ciphers";
+            this.CiphersHMB.UseVisualStyleBackColor = false;
+            // 
             // CaesarHMB
             // 
             this.CaesarHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
@@ -104,7 +134,7 @@
             this.CaesarHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CaesarHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.CaesarHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.CaesarHMB.Location = new System.Drawing.Point(239, 3);
+            this.CaesarHMB.Location = new System.Drawing.Point(475, 3);
             this.CaesarHMB.Name = "CaesarHMB";
             this.CaesarHMB.Size = new System.Drawing.Size(230, 230);
             this.CaesarHMB.TabIndex = 35;
@@ -118,7 +148,7 @@
             this.AffineHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AffineHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.AffineHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.AffineHMB.Location = new System.Drawing.Point(475, 3);
+            this.AffineHMB.Location = new System.Drawing.Point(711, 3);
             this.AffineHMB.Name = "AffineHMB";
             this.AffineHMB.Size = new System.Drawing.Size(230, 230);
             this.AffineHMB.TabIndex = 36;
@@ -132,7 +162,7 @@
             this.RailFenceHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RailFenceHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.RailFenceHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.RailFenceHMB.Location = new System.Drawing.Point(711, 3);
+            this.RailFenceHMB.Location = new System.Drawing.Point(947, 3);
             this.RailFenceHMB.Name = "RailFenceHMB";
             this.RailFenceHMB.Size = new System.Drawing.Size(230, 230);
             this.RailFenceHMB.TabIndex = 37;
@@ -146,12 +176,124 @@
             this.PlayfairHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PlayfairHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.PlayfairHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.PlayfairHMB.Location = new System.Drawing.Point(947, 3);
+            this.PlayfairHMB.Location = new System.Drawing.Point(3, 239);
             this.PlayfairHMB.Name = "PlayfairHMB";
             this.PlayfairHMB.Size = new System.Drawing.Size(230, 230);
             this.PlayfairHMB.TabIndex = 39;
             this.PlayfairHMB.Text = "Playfair Cipher";
             this.PlayfairHMB.UseVisualStyleBackColor = false;
+            // 
+            // EnigmaHMB
+            // 
+            this.EnigmaHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
+            this.EnigmaHMB.FlatAppearance.BorderSize = 0;
+            this.EnigmaHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EnigmaHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.EnigmaHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.EnigmaHMB.Location = new System.Drawing.Point(239, 239);
+            this.EnigmaHMB.Name = "EnigmaHMB";
+            this.EnigmaHMB.Size = new System.Drawing.Size(230, 230);
+            this.EnigmaHMB.TabIndex = 40;
+            this.EnigmaHMB.Text = "The Enigma Machine";
+            this.EnigmaHMB.UseVisualStyleBackColor = false;
+            // 
+            // AlgorithmsHMB
+            // 
+            this.AlgorithmsHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
+            this.AlgorithmsHMB.FlatAppearance.BorderSize = 0;
+            this.AlgorithmsHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AlgorithmsHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.AlgorithmsHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.AlgorithmsHMB.Location = new System.Drawing.Point(475, 239);
+            this.AlgorithmsHMB.Name = "AlgorithmsHMB";
+            this.AlgorithmsHMB.Size = new System.Drawing.Size(230, 230);
+            this.AlgorithmsHMB.TabIndex = 47;
+            this.AlgorithmsHMB.Text = "Algorithms";
+            this.AlgorithmsHMB.UseVisualStyleBackColor = false;
+            // 
+            // DesHMB
+            // 
+            this.DesHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
+            this.DesHMB.FlatAppearance.BorderSize = 0;
+            this.DesHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DesHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.DesHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.DesHMB.Location = new System.Drawing.Point(711, 239);
+            this.DesHMB.Name = "DesHMB";
+            this.DesHMB.Size = new System.Drawing.Size(230, 230);
+            this.DesHMB.TabIndex = 41;
+            this.DesHMB.Text = "Data Encryption Standard (DES)";
+            this.DesHMB.UseVisualStyleBackColor = false;
+            // 
+            // RsaHMB
+            // 
+            this.RsaHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
+            this.RsaHMB.FlatAppearance.BorderSize = 0;
+            this.RsaHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RsaHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.RsaHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.RsaHMB.Location = new System.Drawing.Point(947, 239);
+            this.RsaHMB.Name = "RsaHMB";
+            this.RsaHMB.Size = new System.Drawing.Size(230, 230);
+            this.RsaHMB.TabIndex = 42;
+            this.RsaHMB.Text = "RSA Algorithm";
+            this.RsaHMB.UseVisualStyleBackColor = false;
+            // 
+            // AesHMB
+            // 
+            this.AesHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
+            this.AesHMB.FlatAppearance.BorderSize = 0;
+            this.AesHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AesHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.AesHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.AesHMB.Location = new System.Drawing.Point(3, 475);
+            this.AesHMB.Name = "AesHMB";
+            this.AesHMB.Size = new System.Drawing.Size(230, 230);
+            this.AesHMB.TabIndex = 43;
+            this.AesHMB.Text = "Advanced Encryption Standard (AES)";
+            this.AesHMB.UseVisualStyleBackColor = false;
+            // 
+            // HashesHMB
+            // 
+            this.HashesHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
+            this.HashesHMB.FlatAppearance.BorderSize = 0;
+            this.HashesHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HashesHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.HashesHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.HashesHMB.Location = new System.Drawing.Point(239, 475);
+            this.HashesHMB.Name = "HashesHMB";
+            this.HashesHMB.Size = new System.Drawing.Size(230, 230);
+            this.HashesHMB.TabIndex = 48;
+            this.HashesHMB.Text = "Hashes";
+            this.HashesHMB.UseVisualStyleBackColor = false;
+            // 
+            // ShaHMB
+            // 
+            this.ShaHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
+            this.ShaHMB.FlatAppearance.BorderSize = 0;
+            this.ShaHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ShaHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.ShaHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.ShaHMB.Location = new System.Drawing.Point(475, 475);
+            this.ShaHMB.Name = "ShaHMB";
+            this.ShaHMB.Size = new System.Drawing.Size(230, 230);
+            this.ShaHMB.TabIndex = 44;
+            this.ShaHMB.Text = "Secure Hash Algorithms (SHA)";
+            this.ShaHMB.UseVisualStyleBackColor = false;
+            // 
+            // MdHMB
+            // 
+            this.MdHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
+            this.MdHMB.FlatAppearance.BorderSize = 0;
+            this.MdHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MdHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.MdHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.MdHMB.Location = new System.Drawing.Point(711, 475);
+            this.MdHMB.Name = "MdHMB";
+            this.MdHMB.Size = new System.Drawing.Size(230, 230);
+            this.MdHMB.TabIndex = 45;
+            this.MdHMB.Text = "Message-Digest Algorithms (MD)";
+            this.MdHMB.UseVisualStyleBackColor = false;
             // 
             // MenuBar
             // 
@@ -225,20 +367,6 @@
             this.HomeButton.TabIndex = 0;
             this.HomeButton.UseVisualStyleBackColor = true;
             // 
-            // EnigmaHMB
-            // 
-            this.EnigmaHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
-            this.EnigmaHMB.FlatAppearance.BorderSize = 0;
-            this.EnigmaHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EnigmaHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.EnigmaHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.EnigmaHMB.Location = new System.Drawing.Point(3, 239);
-            this.EnigmaHMB.Name = "EnigmaHMB";
-            this.EnigmaHMB.Size = new System.Drawing.Size(230, 230);
-            this.EnigmaHMB.TabIndex = 40;
-            this.EnigmaHMB.Text = "The Enigma Machine";
-            this.EnigmaHMB.UseVisualStyleBackColor = false;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -277,5 +405,13 @@
         private System.Windows.Forms.Button MinimizeButton;
         private System.Windows.Forms.Button PlayfairHMB;
         private System.Windows.Forms.Button EnigmaHMB;
+        private System.Windows.Forms.Button CiphersHMB;
+        private System.Windows.Forms.Button AlgorithmsHMB;
+        private System.Windows.Forms.Button DesHMB;
+        private System.Windows.Forms.Button RsaHMB;
+        private System.Windows.Forms.Button AesHMB;
+        private System.Windows.Forms.Button HashesHMB;
+        private System.Windows.Forms.Button ShaHMB;
+        private System.Windows.Forms.Button MdHMB;
     }
 }
