@@ -43,6 +43,7 @@
             this.PageNameLabel = new System.Windows.Forms.Label();
             this.SettingsButton = new System.Windows.Forms.Button();
             this.HomeButton = new System.Windows.Forms.Button();
+            this.EnigmaHMB = new System.Windows.Forms.Button();
             this.background.SuspendLayout();
             this.HomePage.SuspendLayout();
             this.HomePageLayout.SuspendLayout();
@@ -75,6 +76,7 @@
             this.HomePageLayout.Controls.Add(this.AffineHMB);
             this.HomePageLayout.Controls.Add(this.RailFenceHMB);
             this.HomePageLayout.Controls.Add(this.PlayfairHMB);
+            this.HomePageLayout.Controls.Add(this.EnigmaHMB);
             this.HomePageLayout.Location = new System.Drawing.Point(13, 2);
             this.HomePageLayout.Name = "HomePageLayout";
             this.HomePageLayout.Size = new System.Drawing.Size(1211, 610);
@@ -223,6 +225,20 @@
             this.HomeButton.TabIndex = 0;
             this.HomeButton.UseVisualStyleBackColor = true;
             // 
+            // EnigmaHMB
+            // 
+            this.EnigmaHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
+            this.EnigmaHMB.FlatAppearance.BorderSize = 0;
+            this.EnigmaHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.EnigmaHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.EnigmaHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.EnigmaHMB.Location = new System.Drawing.Point(3, 239);
+            this.EnigmaHMB.Name = "EnigmaHMB";
+            this.EnigmaHMB.Size = new System.Drawing.Size(230, 230);
+            this.EnigmaHMB.TabIndex = 40;
+            this.EnigmaHMB.Text = "The Enigma Machine";
+            this.EnigmaHMB.UseVisualStyleBackColor = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -260,5 +276,6 @@
         private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.Button MinimizeButton;
         private System.Windows.Forms.Button PlayfairHMB;
+        private System.Windows.Forms.Button EnigmaHMB;
     }
 }
