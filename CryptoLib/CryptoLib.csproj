@@ -43,6 +43,11 @@
   <ItemGroup>
     <Compile Include="Affine.cs" />
     <Compile Include="Caesar.cs" />
+    <Compile Include="DES.cs" />
+    <Compile Include="MD5.cs" />
+    <Compile Include="RSA.cs" />
+    <Compile Include="SHA1.cs" />
+    <Compile Include="TripleDES.cs" />
     <Compile Include="Enigma.cs" />
     <Compile Include="Playfair.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
