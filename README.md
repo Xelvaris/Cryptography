@@ -8,4 +8,13 @@ This program when completed will be a simple WinForms application. It will be ab
 Each cipher and algorithm has it's own class in the CryptoLib project you can find all the code for encryption, decryption, and the challenge for it in the class for the desired cipher/algorithm.
 
 - Caesar Cipher
+- Affine Cipher
+- Rail-Fence Cipher
+- Vigenère Cipher
+- Playfair Cipher
+- The Enigma Machine
+- Data Encryption Standard (DES)
+- Triple DES
+- Secure Hash Algorithm 1 (SHA-1)
+- Message-Digest Algorithm 5 (MD5)
 - 
