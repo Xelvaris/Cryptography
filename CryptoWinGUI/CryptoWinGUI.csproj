@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CaesarPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaesarPage.Designer.cs">
+      <DependentUpon>CaesarPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TempPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TempPage.Designer.cs">
+      <DependentUpon>TempPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="DevPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CaesarPage.resx">
+      <DependentUpon>CaesarPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TempPage.resx">
+      <DependentUpon>TempPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DevPage.resx">
       <DependentUpon>DevPage.cs</DependentUpon>
     </EmbeddedResource>

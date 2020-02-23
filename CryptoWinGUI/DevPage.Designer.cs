@@ -79,11 +79,10 @@
             this.PlayfairInput = new System.Windows.Forms.TextBox();
             this.PlayfairEncrypt = new System.Windows.Forms.Button();
             this.PlayfairOutput = new System.Windows.Forms.TextBox();
+            this.Enigma = new System.Windows.Forms.TabPage();
             this.MenuBar = new System.Windows.Forms.Panel();
             this.PageNameLabel = new System.Windows.Forms.Label();
-            this.SettingsButton = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
-            this.Enigma = new System.Windows.Forms.TabPage();
             this.background.SuspendLayout();
             this.CaesarPanel.SuspendLayout();
             this.contentPages.SuspendLayout();
@@ -248,7 +247,7 @@
             this.AffinePage.Location = new System.Drawing.Point(4, 22);
             this.AffinePage.Name = "AffinePage";
             this.AffinePage.Padding = new System.Windows.Forms.Padding(3);
-            this.AffinePage.Size = new System.Drawing.Size(1192, 571);
+            this.AffinePage.Size = new System.Drawing.Size(1192, 574);
             this.AffinePage.TabIndex = 2;
             this.AffinePage.Text = "Affine";
             this.AffinePage.UseVisualStyleBackColor = true;
@@ -381,7 +380,7 @@
             this.RailFencePage.Location = new System.Drawing.Point(4, 22);
             this.RailFencePage.Name = "RailFencePage";
             this.RailFencePage.Padding = new System.Windows.Forms.Padding(3);
-            this.RailFencePage.Size = new System.Drawing.Size(1192, 571);
+            this.RailFencePage.Size = new System.Drawing.Size(1192, 574);
             this.RailFencePage.TabIndex = 3;
             this.RailFencePage.Text = "Rail-Fence";
             this.RailFencePage.UseVisualStyleBackColor = true;
@@ -483,7 +482,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1192, 571);
+            this.tabPage3.Size = new System.Drawing.Size(1192, 574);
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "Vigenere";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -570,7 +569,7 @@
             this.PlayfairPage.Location = new System.Drawing.Point(4, 22);
             this.PlayfairPage.Name = "PlayfairPage";
             this.PlayfairPage.Padding = new System.Windows.Forms.Padding(3);
-            this.PlayfairPage.Size = new System.Drawing.Size(1192, 571);
+            this.PlayfairPage.Size = new System.Drawing.Size(1192, 574);
             this.PlayfairPage.TabIndex = 5;
             this.PlayfairPage.Text = "Playfair";
             this.PlayfairPage.UseVisualStyleBackColor = true;
@@ -644,11 +643,20 @@
             this.PlayfairOutput.Size = new System.Drawing.Size(193, 20);
             this.PlayfairOutput.TabIndex = 17;
             // 
+            // Enigma
+            // 
+            this.Enigma.Location = new System.Drawing.Point(4, 22);
+            this.Enigma.Name = "Enigma";
+            this.Enigma.Padding = new System.Windows.Forms.Padding(3);
+            this.Enigma.Size = new System.Drawing.Size(1192, 574);
+            this.Enigma.TabIndex = 6;
+            this.Enigma.Text = "Enigma";
+            this.Enigma.UseVisualStyleBackColor = true;
+            // 
             // MenuBar
             // 
             this.MenuBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.MenuBar.Controls.Add(this.PageNameLabel);
-            this.MenuBar.Controls.Add(this.SettingsButton);
             this.MenuBar.Controls.Add(this.CloseButton);
             this.MenuBar.Location = new System.Drawing.Point(-1, -1);
             this.MenuBar.Name = "MenuBar";
@@ -661,44 +669,23 @@
             this.PageNameLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.PageNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.PageNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.PageNameLabel.Location = new System.Drawing.Point(65, 11);
+            this.PageNameLabel.Location = new System.Drawing.Point(10, 10);
             this.PageNameLabel.Name = "PageNameLabel";
             this.PageNameLabel.Size = new System.Drawing.Size(194, 46);
             this.PageNameLabel.TabIndex = 2;
             this.PageNameLabel.Text = "Dev Page";
-            // 
-            // SettingsButton
-            // 
-            this.SettingsButton.FlatAppearance.BorderSize = 0;
-            this.SettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SettingsButton.Image = ((System.Drawing.Image)(resources.GetObject("SettingsButton.Image")));
-            this.SettingsButton.Location = new System.Drawing.Point(1166, 4);
-            this.SettingsButton.Name = "SettingsButton";
-            this.SettingsButton.Size = new System.Drawing.Size(55, 55);
-            this.SettingsButton.TabIndex = 1;
-            this.SettingsButton.UseVisualStyleBackColor = true;
             // 
             // CloseButton
             // 
             this.CloseButton.FlatAppearance.BorderSize = 0;
             this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseButton.Image = ((System.Drawing.Image)(resources.GetObject("CloseButton.Image")));
-            this.CloseButton.Location = new System.Drawing.Point(4, 3);
+            this.CloseButton.Location = new System.Drawing.Point(1169, 3);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(55, 55);
             this.CloseButton.TabIndex = 0;
             this.CloseButton.UseVisualStyleBackColor = true;
             this.CloseButton.Click += new System.EventHandler(this.HomeButton_Click);
-            // 
-            // Enigma
-            // 
-            this.Enigma.Location = new System.Drawing.Point(4, 22);
-            this.Enigma.Name = "Enigma";
-            this.Enigma.Padding = new System.Windows.Forms.Padding(3);
-            this.Enigma.Size = new System.Drawing.Size(1192, 574);
-            this.Enigma.TabIndex = 6;
-            this.Enigma.Text = "Enigma";
-            this.Enigma.UseVisualStyleBackColor = true;
             // 
             // DevPage
             // 
@@ -707,6 +694,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1224, 672);
             this.Controls.Add(this.background);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "DevPage";
@@ -771,7 +759,6 @@
         private System.Windows.Forms.TextBox RailFenceOutput;
         private System.Windows.Forms.TextBox RailFenceInput;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button SettingsButton;
         private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox VigenereKeyword;

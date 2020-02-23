@@ -33,27 +33,26 @@
             this.HomePage = new System.Windows.Forms.Panel();
             this.HomePageLayout = new System.Windows.Forms.FlowLayoutPanel();
             this.DevPageHMB = new System.Windows.Forms.Button();
+            this.CryptologyHMB = new System.Windows.Forms.Button();
             this.CiphersHMB = new System.Windows.Forms.Button();
             this.CaesarHMB = new System.Windows.Forms.Button();
             this.AffineHMB = new System.Windows.Forms.Button();
             this.RailFenceHMB = new System.Windows.Forms.Button();
+            this.VigenereHMB = new System.Windows.Forms.Button();
             this.PlayfairHMB = new System.Windows.Forms.Button();
             this.EnigmaHMB = new System.Windows.Forms.Button();
+            this.HashesHMB = new System.Windows.Forms.Button();
+            this.ShaHMB = new System.Windows.Forms.Button();
+            this.MdHMB = new System.Windows.Forms.Button();
             this.AlgorithmsHMB = new System.Windows.Forms.Button();
             this.DesHMB = new System.Windows.Forms.Button();
             this.RsaHMB = new System.Windows.Forms.Button();
             this.AesHMB = new System.Windows.Forms.Button();
-            this.HashesHMB = new System.Windows.Forms.Button();
-            this.ShaHMB = new System.Windows.Forms.Button();
-            this.MdHMB = new System.Windows.Forms.Button();
             this.MenuBar = new System.Windows.Forms.Panel();
             this.MinimizeButton = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
             this.PageNameLabel = new System.Windows.Forms.Label();
-            this.SettingsButton = new System.Windows.Forms.Button();
             this.HomeButton = new System.Windows.Forms.Button();
-            this.CryptologyHMB = new System.Windows.Forms.Button();
-            this.VigenereHMB = new System.Windows.Forms.Button();
             this.background.SuspendLayout();
             this.HomePage.SuspendLayout();
             this.HomePageLayout.SuspendLayout();
@@ -117,6 +116,20 @@
             this.DevPageHMB.UseVisualStyleBackColor = false;
             this.DevPageHMB.Click += new System.EventHandler(this.DevPageHMB_Click);
             // 
+            // CryptologyHMB
+            // 
+            this.CryptologyHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
+            this.CryptologyHMB.FlatAppearance.BorderSize = 0;
+            this.CryptologyHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CryptologyHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.CryptologyHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.CryptologyHMB.Location = new System.Drawing.Point(239, 3);
+            this.CryptologyHMB.Name = "CryptologyHMB";
+            this.CryptologyHMB.Size = new System.Drawing.Size(230, 230);
+            this.CryptologyHMB.TabIndex = 49;
+            this.CryptologyHMB.Text = "Cryptology";
+            this.CryptologyHMB.UseVisualStyleBackColor = false;
+            // 
             // CiphersHMB
             // 
             this.CiphersHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
@@ -144,6 +157,7 @@
             this.CaesarHMB.TabIndex = 35;
             this.CaesarHMB.Text = "Caesar Cipher";
             this.CaesarHMB.UseVisualStyleBackColor = false;
+            this.CaesarHMB.Click += new System.EventHandler(this.CaesarHMB_Click);
             // 
             // AffineHMB
             // 
@@ -173,6 +187,20 @@
             this.RailFenceHMB.Text = "Rail-Fence Cipher";
             this.RailFenceHMB.UseVisualStyleBackColor = false;
             // 
+            // VigenereHMB
+            // 
+            this.VigenereHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
+            this.VigenereHMB.FlatAppearance.BorderSize = 0;
+            this.VigenereHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VigenereHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.VigenereHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.VigenereHMB.Location = new System.Drawing.Point(239, 239);
+            this.VigenereHMB.Name = "VigenereHMB";
+            this.VigenereHMB.Size = new System.Drawing.Size(230, 230);
+            this.VigenereHMB.TabIndex = 50;
+            this.VigenereHMB.Text = "Vigenère Cipher";
+            this.VigenereHMB.UseVisualStyleBackColor = false;
+            // 
             // PlayfairHMB
             // 
             this.PlayfairHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
@@ -200,6 +228,48 @@
             this.EnigmaHMB.TabIndex = 40;
             this.EnigmaHMB.Text = "The Enigma Machine";
             this.EnigmaHMB.UseVisualStyleBackColor = false;
+            // 
+            // HashesHMB
+            // 
+            this.HashesHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
+            this.HashesHMB.FlatAppearance.BorderSize = 0;
+            this.HashesHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HashesHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.HashesHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.HashesHMB.Location = new System.Drawing.Point(947, 239);
+            this.HashesHMB.Name = "HashesHMB";
+            this.HashesHMB.Size = new System.Drawing.Size(230, 230);
+            this.HashesHMB.TabIndex = 48;
+            this.HashesHMB.Text = "Hashes";
+            this.HashesHMB.UseVisualStyleBackColor = false;
+            // 
+            // ShaHMB
+            // 
+            this.ShaHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
+            this.ShaHMB.FlatAppearance.BorderSize = 0;
+            this.ShaHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ShaHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.ShaHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.ShaHMB.Location = new System.Drawing.Point(3, 475);
+            this.ShaHMB.Name = "ShaHMB";
+            this.ShaHMB.Size = new System.Drawing.Size(230, 230);
+            this.ShaHMB.TabIndex = 44;
+            this.ShaHMB.Text = "Secure Hash Algorithms (SHA)";
+            this.ShaHMB.UseVisualStyleBackColor = false;
+            // 
+            // MdHMB
+            // 
+            this.MdHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
+            this.MdHMB.FlatAppearance.BorderSize = 0;
+            this.MdHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MdHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.MdHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.MdHMB.Location = new System.Drawing.Point(239, 475);
+            this.MdHMB.Name = "MdHMB";
+            this.MdHMB.Size = new System.Drawing.Size(230, 230);
+            this.MdHMB.TabIndex = 45;
+            this.MdHMB.Text = "Message-Digest Algorithms (MD)";
+            this.MdHMB.UseVisualStyleBackColor = false;
             // 
             // AlgorithmsHMB
             // 
@@ -257,55 +327,12 @@
             this.AesHMB.Text = "Advanced Encryption Standard (AES)";
             this.AesHMB.UseVisualStyleBackColor = false;
             // 
-            // HashesHMB
-            // 
-            this.HashesHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
-            this.HashesHMB.FlatAppearance.BorderSize = 0;
-            this.HashesHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HashesHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.HashesHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.HashesHMB.Location = new System.Drawing.Point(947, 239);
-            this.HashesHMB.Name = "HashesHMB";
-            this.HashesHMB.Size = new System.Drawing.Size(230, 230);
-            this.HashesHMB.TabIndex = 48;
-            this.HashesHMB.Text = "Hashes";
-            this.HashesHMB.UseVisualStyleBackColor = false;
-            // 
-            // ShaHMB
-            // 
-            this.ShaHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
-            this.ShaHMB.FlatAppearance.BorderSize = 0;
-            this.ShaHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ShaHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.ShaHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.ShaHMB.Location = new System.Drawing.Point(3, 475);
-            this.ShaHMB.Name = "ShaHMB";
-            this.ShaHMB.Size = new System.Drawing.Size(230, 230);
-            this.ShaHMB.TabIndex = 44;
-            this.ShaHMB.Text = "Secure Hash Algorithms (SHA)";
-            this.ShaHMB.UseVisualStyleBackColor = false;
-            // 
-            // MdHMB
-            // 
-            this.MdHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
-            this.MdHMB.FlatAppearance.BorderSize = 0;
-            this.MdHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MdHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.MdHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.MdHMB.Location = new System.Drawing.Point(239, 475);
-            this.MdHMB.Name = "MdHMB";
-            this.MdHMB.Size = new System.Drawing.Size(230, 230);
-            this.MdHMB.TabIndex = 45;
-            this.MdHMB.Text = "Message-Digest Algorithms (MD)";
-            this.MdHMB.UseVisualStyleBackColor = false;
-            // 
             // MenuBar
             // 
             this.MenuBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.MenuBar.Controls.Add(this.MinimizeButton);
             this.MenuBar.Controls.Add(this.CloseButton);
             this.MenuBar.Controls.Add(this.PageNameLabel);
-            this.MenuBar.Controls.Add(this.SettingsButton);
             this.MenuBar.Controls.Add(this.HomeButton);
             this.MenuBar.Location = new System.Drawing.Point(-1, -1);
             this.MenuBar.Name = "MenuBar";
@@ -348,18 +375,6 @@
             this.PageNameLabel.TabIndex = 2;
             this.PageNameLabel.Text = "Home";
             // 
-            // SettingsButton
-            // 
-            this.SettingsButton.FlatAppearance.BorderSize = 0;
-            this.SettingsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SettingsButton.Image = ((System.Drawing.Image)(resources.GetObject("SettingsButton.Image")));
-            this.SettingsButton.Location = new System.Drawing.Point(1047, 2);
-            this.SettingsButton.Name = "SettingsButton";
-            this.SettingsButton.Size = new System.Drawing.Size(55, 55);
-            this.SettingsButton.TabIndex = 1;
-            this.SettingsButton.UseVisualStyleBackColor = true;
-            this.SettingsButton.Click += new System.EventHandler(this.SettingsButton_Click);
-            // 
             // HomeButton
             // 
             this.HomeButton.FlatAppearance.BorderSize = 0;
@@ -370,34 +385,6 @@
             this.HomeButton.Size = new System.Drawing.Size(55, 55);
             this.HomeButton.TabIndex = 0;
             this.HomeButton.UseVisualStyleBackColor = true;
-            // 
-            // CryptologyHMB
-            // 
-            this.CryptologyHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
-            this.CryptologyHMB.FlatAppearance.BorderSize = 0;
-            this.CryptologyHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CryptologyHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.CryptologyHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.CryptologyHMB.Location = new System.Drawing.Point(239, 3);
-            this.CryptologyHMB.Name = "CryptologyHMB";
-            this.CryptologyHMB.Size = new System.Drawing.Size(230, 230);
-            this.CryptologyHMB.TabIndex = 49;
-            this.CryptologyHMB.Text = "Cryptology";
-            this.CryptologyHMB.UseVisualStyleBackColor = false;
-            // 
-            // VigenereHMB
-            // 
-            this.VigenereHMB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
-            this.VigenereHMB.FlatAppearance.BorderSize = 0;
-            this.VigenereHMB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.VigenereHMB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.VigenereHMB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
-            this.VigenereHMB.Location = new System.Drawing.Point(239, 239);
-            this.VigenereHMB.Name = "VigenereHMB";
-            this.VigenereHMB.Size = new System.Drawing.Size(230, 230);
-            this.VigenereHMB.TabIndex = 50;
-            this.VigenereHMB.Text = "Vigenère Cipher";
-            this.VigenereHMB.UseVisualStyleBackColor = false;
             // 
             // Main
             // 
@@ -426,7 +413,6 @@
         private System.Windows.Forms.Panel MenuBar;
         private System.Windows.Forms.Button HomeButton;
         private System.Windows.Forms.Label PageNameLabel;
-        private System.Windows.Forms.Button SettingsButton;
         private System.Windows.Forms.Panel HomePage;
         private System.Windows.Forms.FlowLayoutPanel HomePageLayout;
         private System.Windows.Forms.Button CaesarHMB;

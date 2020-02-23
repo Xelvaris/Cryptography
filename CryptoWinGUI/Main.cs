@@ -33,9 +33,10 @@ namespace CryptoWinGUI
             WindowState = FormWindowState.Minimized;
         }
 
-        private void SettingsButton_Click(object sender, EventArgs e)
+        private void CaesarHMB_Click(object sender, EventArgs e)
         {
-
+            CaesarPage CP = new CaesarPage();
+            CP.Show();
         }
     }
 }
