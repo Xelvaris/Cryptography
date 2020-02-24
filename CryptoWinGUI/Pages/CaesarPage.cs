@@ -29,10 +29,5 @@ namespace CryptoWinGUI
         {
             this.Close();
         }
-
-        private void CaesarOutput_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
