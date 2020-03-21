@@ -11,7 +11,7 @@ namespace CryptoWinGUI
             InitializeComponent();
         }
 
-        private void HomeButton_Click(object sender, EventArgs e)
+        private void CloseButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -23,11 +23,6 @@ namespace CryptoWinGUI
         private void CaesarDecrypt_Click(object sender, EventArgs e)
         {
             CaesarOutput.Text = Caesar.Decrypt(CaesarInput.Text, Convert.ToInt32(shiftNumber.Value));
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

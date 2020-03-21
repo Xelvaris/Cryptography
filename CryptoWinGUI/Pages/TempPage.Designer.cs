@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TempPage));
             this.background = new System.Windows.Forms.Panel();
             this.MenuBar = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.CLoseButton = new System.Windows.Forms.Button();
             this.PageNameLabel = new System.Windows.Forms.Label();
             this.background.SuspendLayout();
             this.MenuBar.SuspendLayout();
@@ -49,23 +49,23 @@
             // MenuBar
             // 
             this.MenuBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.MenuBar.Controls.Add(this.button1);
+            this.MenuBar.Controls.Add(this.CLoseButton);
             this.MenuBar.Controls.Add(this.PageNameLabel);
             this.MenuBar.Location = new System.Drawing.Point(-1, -1);
             this.MenuBar.Name = "MenuBar";
             this.MenuBar.Size = new System.Drawing.Size(1227, 62);
             this.MenuBar.TabIndex = 28;
             // 
-            // button1
+            // CLoseButton
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(1167, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(55, 55);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = true;
+            this.CLoseButton.FlatAppearance.BorderSize = 0;
+            this.CLoseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CLoseButton.Image = ((System.Drawing.Image)(resources.GetObject("CLoseButton.Image")));
+            this.CLoseButton.Location = new System.Drawing.Point(1167, 3);
+            this.CLoseButton.Name = "CLoseButton";
+            this.CLoseButton.Size = new System.Drawing.Size(55, 55);
+            this.CLoseButton.TabIndex = 3;
+            this.CLoseButton.UseVisualStyleBackColor = true;
             // 
             // PageNameLabel
             // 
@@ -104,6 +104,6 @@
         private System.Windows.Forms.Panel background;
         private System.Windows.Forms.Panel MenuBar;
         private System.Windows.Forms.Label PageNameLabel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button CLoseButton;
     }
 }

@@ -38,5 +38,10 @@ namespace CryptoWinGUI
             CaesarPage CP = new CaesarPage();
             CP.Show();
         }
+
+        private void AffineHMB_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

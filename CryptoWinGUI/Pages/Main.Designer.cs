@@ -48,6 +48,7 @@
             this.DesHMB = new System.Windows.Forms.Button();
             this.RsaHMB = new System.Windows.Forms.Button();
             this.AesHMB = new System.Windows.Forms.Button();
+            this.Um = new System.Windows.Forms.Button();
             this.MenuBar = new System.Windows.Forms.Panel();
             this.MinimizeButton = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
@@ -96,6 +97,7 @@
             this.HomePageLayout.Controls.Add(this.DesHMB);
             this.HomePageLayout.Controls.Add(this.RsaHMB);
             this.HomePageLayout.Controls.Add(this.AesHMB);
+            this.HomePageLayout.Controls.Add(this.Um);
             this.HomePageLayout.Location = new System.Drawing.Point(13, 2);
             this.HomePageLayout.Name = "HomePageLayout";
             this.HomePageLayout.Size = new System.Drawing.Size(1211, 610);
@@ -172,6 +174,7 @@
             this.AffineHMB.TabIndex = 36;
             this.AffineHMB.Text = "Affine Cipher";
             this.AffineHMB.UseVisualStyleBackColor = false;
+            this.AffineHMB.Click += new System.EventHandler(this.AffineHMB_Click);
             // 
             // RailFenceHMB
             // 
@@ -327,6 +330,20 @@
             this.AesHMB.Text = "Advanced Encryption Standard (AES)";
             this.AesHMB.UseVisualStyleBackColor = false;
             // 
+            // Um
+            // 
+            this.Um.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(51)))));
+            this.Um.FlatAppearance.BorderSize = 0;
+            this.Um.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Um.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.Um.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(244)))));
+            this.Um.Location = new System.Drawing.Point(239, 711);
+            this.Um.Name = "Um";
+            this.Um.Size = new System.Drawing.Size(230, 230);
+            this.Um.TabIndex = 51;
+            this.Um.Text = "?!";
+            this.Um.UseVisualStyleBackColor = false;
+            // 
             // MenuBar
             // 
             this.MenuBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -433,5 +450,6 @@
         private System.Windows.Forms.Button MdHMB;
         private System.Windows.Forms.Button CryptologyHMB;
         private System.Windows.Forms.Button VigenereHMB;
+        private System.Windows.Forms.Button Um;
     }
 }

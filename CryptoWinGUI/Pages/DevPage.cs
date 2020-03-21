@@ -16,16 +16,6 @@ namespace CryptoWinGUI
             this.Close();
         }
 
-        private void CaesarEncrypt_Click(object sender, EventArgs e)
-        {
-            CaesarOutput.Text = Caesar.Encrypt(CaesarInput.Text, Convert.ToInt32(shiftNumber.Value));
-        }
-
-        private void CaesarDecrypt_Click(object sender, EventArgs e)
-        {
-            CaesarOutput.Text = Caesar.Decrypt(CaesarInput.Text, Convert.ToInt32(shiftNumber.Value));
-        }
-
         private void AffineEncrypt_Click(object sender, EventArgs e)
         {
             try

@@ -52,6 +52,12 @@
     <Compile Include="Pages\CaesarPage.Designer.cs">
       <DependentUpon>CaesarPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AffinePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\AffinePage.Designer.cs">
+      <DependentUpon>AffinePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\TempPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Pages\CaesarPage.resx">
       <DependentUpon>CaesarPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\AffinePage.resx">
+      <DependentUpon>AffinePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\TempPage.resx">
       <DependentUpon>TempPage.cs</DependentUpon>

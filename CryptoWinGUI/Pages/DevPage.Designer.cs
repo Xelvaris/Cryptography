@@ -32,15 +32,6 @@
             this.background = new System.Windows.Forms.Panel();
             this.CaesarPanel = new System.Windows.Forms.Panel();
             this.contentPages = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.shiftNumber = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.CaesarDecrypt = new System.Windows.Forms.Button();
-            this.CaesarInput = new System.Windows.Forms.TextBox();
-            this.CaesarEncrypt = new System.Windows.Forms.Button();
-            this.CaesarOutput = new System.Windows.Forms.TextBox();
             this.AffinePage = new System.Windows.Forms.TabPage();
             this.AffineB = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
@@ -86,8 +77,6 @@
             this.background.SuspendLayout();
             this.CaesarPanel.SuspendLayout();
             this.contentPages.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.shiftNumber)).BeginInit();
             this.AffinePage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AffineB)).BeginInit();
             this.RailFencePage.SuspendLayout();
@@ -117,7 +106,6 @@
             // 
             // contentPages
             // 
-            this.contentPages.Controls.Add(this.tabPage1);
             this.contentPages.Controls.Add(this.AffinePage);
             this.contentPages.Controls.Add(this.RailFencePage);
             this.contentPages.Controls.Add(this.tabPage3);
@@ -129,108 +117,6 @@
             this.contentPages.Size = new System.Drawing.Size(1200, 600);
             this.contentPages.TabIndex = 15;
             this.contentPages.TabStop = false;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.shiftNumber);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.CaesarDecrypt);
-            this.tabPage1.Controls.Add(this.CaesarInput);
-            this.tabPage1.Controls.Add(this.CaesarEncrypt);
-            this.tabPage1.Controls.Add(this.CaesarOutput);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1192, 574);
-            this.tabPage1.TabIndex = 1;
-            this.tabPage1.Text = "Caesar";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // shiftNumber
-            // 
-            this.shiftNumber.Location = new System.Drawing.Point(184, 74);
-            this.shiftNumber.Maximum = new decimal(new int[] {
-            25,
-            0,
-            0,
-            0});
-            this.shiftNumber.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.shiftNumber.Name = "shiftNumber";
-            this.shiftNumber.Size = new System.Drawing.Size(49, 20);
-            this.shiftNumber.TabIndex = 7;
-            this.shiftNumber.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(152, 77);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Shift:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Input:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(38, 80);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Output:";
-            // 
-            // CaesarDecrypt
-            // 
-            this.CaesarDecrypt.Location = new System.Drawing.Point(150, 132);
-            this.CaesarDecrypt.Name = "CaesarDecrypt";
-            this.CaesarDecrypt.Size = new System.Drawing.Size(84, 23);
-            this.CaesarDecrypt.TabIndex = 3;
-            this.CaesarDecrypt.Text = "Decrypt";
-            this.CaesarDecrypt.UseVisualStyleBackColor = true;
-            this.CaesarDecrypt.Click += new System.EventHandler(this.CaesarDecrypt_Click);
-            // 
-            // CaesarInput
-            // 
-            this.CaesarInput.Location = new System.Drawing.Point(41, 50);
-            this.CaesarInput.Name = "CaesarInput";
-            this.CaesarInput.Size = new System.Drawing.Size(193, 20);
-            this.CaesarInput.TabIndex = 0;
-            // 
-            // CaesarEncrypt
-            // 
-            this.CaesarEncrypt.Location = new System.Drawing.Point(41, 132);
-            this.CaesarEncrypt.Name = "CaesarEncrypt";
-            this.CaesarEncrypt.Size = new System.Drawing.Size(84, 23);
-            this.CaesarEncrypt.TabIndex = 2;
-            this.CaesarEncrypt.Text = "Encrypt";
-            this.CaesarEncrypt.UseVisualStyleBackColor = true;
-            this.CaesarEncrypt.Click += new System.EventHandler(this.CaesarEncrypt_Click);
-            // 
-            // CaesarOutput
-            // 
-            this.CaesarOutput.Location = new System.Drawing.Point(41, 96);
-            this.CaesarOutput.Name = "CaesarOutput";
-            this.CaesarOutput.ReadOnly = true;
-            this.CaesarOutput.Size = new System.Drawing.Size(193, 20);
-            this.CaesarOutput.TabIndex = 1;
             // 
             // AffinePage
             // 
@@ -703,9 +589,6 @@
             this.background.ResumeLayout(false);
             this.CaesarPanel.ResumeLayout(false);
             this.contentPages.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.shiftNumber)).EndInit();
             this.AffinePage.ResumeLayout(false);
             this.AffinePage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AffineB)).EndInit();
@@ -729,15 +612,6 @@
         private System.Windows.Forms.Panel MenuBar;
         private System.Windows.Forms.Label PageNameLabel;
         private System.Windows.Forms.TabControl contentPages;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.NumericUpDown shiftNumber;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button CaesarDecrypt;
-        private System.Windows.Forms.Button CaesarEncrypt;
-        private System.Windows.Forms.TextBox CaesarOutput;
-        private System.Windows.Forms.TextBox CaesarInput;
         private System.Windows.Forms.TabPage AffinePage;
         private System.Windows.Forms.NumericUpDown AffineB;
         private System.Windows.Forms.Label label9;
