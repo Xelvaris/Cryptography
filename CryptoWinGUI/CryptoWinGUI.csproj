@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SimpleTCP, Version=1.0.24.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleTCP.1.0.24\lib\net45\SimpleTCP.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -57,6 +60,12 @@
     </Compile>
     <Compile Include="Pages\AffinePage.Designer.cs">
       <DependentUpon>AffinePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\CW.Designer.cs">
+      <DependentUpon>CW.cs</DependentUpon>
     </Compile>
     <Compile Include="Pages\TempPage.cs">
       <SubType>Form</SubType>
@@ -84,6 +93,9 @@
     <EmbeddedResource Include="Pages\AffinePage.resx">
       <DependentUpon>AffinePage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\CW.resx">
+      <DependentUpon>CW.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\TempPage.resx">
       <DependentUpon>TempPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +114,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

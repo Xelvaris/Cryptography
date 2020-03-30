@@ -343,6 +343,7 @@
             this.Um.TabIndex = 51;
             this.Um.Text = "?!";
             this.Um.UseVisualStyleBackColor = false;
+            this.Um.Click += new System.EventHandler(this.Um_Click);
             // 
             // MenuBar
             // 

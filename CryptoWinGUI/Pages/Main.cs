@@ -41,7 +41,14 @@ namespace CryptoWinGUI
 
         private void AffineHMB_Click(object sender, EventArgs e)
         {
+            AffinePage AP = new AffinePage();
+            AP.Show();
+        }
 
+        private void Um_Click(object sender, EventArgs e)
+        {
+            CW cw = new CW();
+            cw.Show();
         }
     }
 }

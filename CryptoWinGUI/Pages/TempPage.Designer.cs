@@ -66,6 +66,7 @@
             this.CLoseButton.Size = new System.Drawing.Size(55, 55);
             this.CLoseButton.TabIndex = 3;
             this.CLoseButton.UseVisualStyleBackColor = true;
+            this.CLoseButton.Click += new System.EventHandler(this.CLoseButton_Click);
             // 
             // PageNameLabel
             // 

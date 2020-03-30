@@ -4,9 +4,9 @@ using CryptoLib;
 
 namespace CryptoWinGUI
 {
-    public partial class TempPage : Form
+    public partial class CW : Form
     {
-        public TempPage()
+        public CW()
         {
             InitializeComponent();
         }
