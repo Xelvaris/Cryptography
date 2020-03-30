@@ -19,6 +19,6 @@ Each cipher and algorithm has it's own class in the CryptoLib project you can fi
 - Message-Digest Algorithm 5 (MD5)
 - 
 
-## Examples Applications of Above
+## Examples Applications and Uses of Cryptology
 - End to End Encryption
 - 
