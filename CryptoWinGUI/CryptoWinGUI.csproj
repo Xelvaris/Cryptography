@@ -67,6 +67,12 @@
     <Compile Include="Pages\CW.Designer.cs">
       <DependentUpon>CW.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\CWServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\CWServer.Designer.cs">
+      <DependentUpon>CWServer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\TempPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\CW.resx">
       <DependentUpon>CW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\CWServer.resx">
+      <DependentUpon>CWServer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\TempPage.resx">
       <DependentUpon>TempPage.cs</DependentUpon>
