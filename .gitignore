@@ -3,6 +3,18 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+out/
+.idea/
+*.iml
+build/
+classes/
+run/
+.classpath
+.metadata/
+.project
+.settings/
+bin/
+
 # User-specific files
 *.suo
 *.user
