@@ -18,7 +18,7 @@ Each cipher and algorithm has it's own class in the CryptoLib project you can fi
 |Secure Hash Algorithm 1 (SHA-1)       |
 |Message-Digest Algorithm 5 (MD5)      |
 
-## Examples Applications and Uses of Cryptology
+## Example Applications and Uses of Cryptology
 |                   C#                 |                  Java                |         
 | ------------------------------------ | ------------------------------------ | 
 |End to End Encryption                 |
