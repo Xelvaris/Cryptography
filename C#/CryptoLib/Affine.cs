@@ -37,7 +37,7 @@ namespace CryptoLib
             return plaintext;
         }
 
-        public static int MultiplicativeInverse(int a)
+        private static int MultiplicativeInverse(int a)
         {
             for (int i = 1; i < 27; i++)
             {
