@@ -1,5 +1,6 @@
 # Cryptography
-//TODO: write info in README.md
+TODO
+
 ## Included Ciphers and Algorithms
 
 |                   C#                 |                  Java                |         
