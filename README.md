@@ -1,5 +1,4 @@
 # Cryptography
-TODO
 
 ## Included Ciphers and Algorithms
 
