@@ -7,7 +7,7 @@ Each cipher and algorithm has it's own class in the CryptoLib project you can fi
 |                   C#                 |                  Java                |         
 | ------------------------------------ | ------------------------------------ | 
 |Caesar Cipher                         |Caesar Cipher                         |
-|Affine Cipher                         |
+|Affine Cipher                         |Affine Cipher
 |Rail-Fence Cipher                     |
 |Vigenère Cipher                       |
 |Playfair Cipher                       |
