@@ -6,7 +6,7 @@
 | ------------------------------------ | ------------------------------------ | 
 |Caesar Cipher                         |Caesar Cipher                         |
 |Affine Cipher                         |Affine Cipher
-|Rail-Fence Cipher                     |
+|Rail-Fence Cipher                     |Rail-Fence Cipher
 |Vigenère Cipher                       |
 |Playfair Cipher                       |
 |The Enigma Machine                    |
