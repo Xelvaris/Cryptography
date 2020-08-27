@@ -1,9 +1,10 @@
 package com.sykes368.lib;
 
 public class Affine implements CiphersAndAlgorithms {
-    private final int[] VALID_A = {1,3,5,7,9,11,15,17,19,51,56,58};
+    private final int[] VALID_A = {1,3,5,7,9,11,15,17,19,21,23,25};
     private int a;
     private int b;
+
     public Affine(int a, int b) {
         this.a = a;
         this.b = b;
@@ -27,21 +28,24 @@ public class Affine implements CiphersAndAlgorithms {
 
     @Override
     public String encrypt(String plaintext) {
-        return affine(plaintext, this.a, this.b, false);
+        return affine(plaintext, false);
     }
 
     @Override
-    public String decrypt(String encodedtext) {
-        return affine(encodedtext, this.a, this.b, true);
+    public String decrypt(String ciphertext) {
+        return affine(ciphertext, true);
     }
 
-    private String affine(String input, int a, int b, boolean decode) {
+    private String affine(String input, boolean decode) {
         if (!isAValid(a)) {
             return "ERROR: The value of 'a' is invalid. Valid values are 1,3,5,7,9,11,15,17,19,21,23, and 25.";
         }
         StringBuilder output = new StringBuilder();
 
-        char[] chars = input.toUpperCase().toCharArray();
+        if(!input.matches("^[ A-Za-z]+$")) {
+            return "ERROR: Input can only be letters and spaces";
+        }
+        char[] chars = input.toUpperCase().replace(" ", "").toCharArray();
 
         for (char c : chars) {
             int x = Character.getNumericValue(c-65);
@@ -71,7 +75,7 @@ public class Affine implements CiphersAndAlgorithms {
     }
 
     private boolean isAValid(int a) {
-        for (int vA : this.VALID_A) {
+        for (int vA : VALID_A) {
             if (vA == a) {
                 return true;
             }

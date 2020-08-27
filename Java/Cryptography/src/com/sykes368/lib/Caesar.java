@@ -21,8 +21,8 @@ public class Caesar implements CiphersAndAlgorithms {
     }
 
     @Override
-    public String decrypt(String encodedtext) {
-        return caesar(encodedtext, this.shift, true);
+    public String decrypt(String ciphertext) {
+        return caesar(ciphertext, this.shift, true);
     }
 
     private static String caesar(String input, int shift, boolean decode) {
