@@ -5,9 +5,9 @@
 |                   C#                 |                  Java                |         
 | ------------------------------------ | ------------------------------------ | 
 |Caesar Cipher                         |Caesar Cipher                         |
-|Affine Cipher                         |Affine Cipher
-|Rail-Fence Cipher                     |Rail-Fence Cipher
-|Vigenère Cipher                       |
+|Affine Cipher                         |Affine Cipher                         |
+|Rail-Fence Cipher                     |Rail-Fence Cipher                     |
+|Vigenère Cipher                       |Vigenère Cipher                       |
 |Playfair Cipher                       |
 |The Enigma Machine                    |
 |Data Encryption Standard (DES)        |
