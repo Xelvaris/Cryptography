@@ -1,5 +1,9 @@
 package com.sykes368.lib;
 
+/** Affine Cipher
+ * @author Sykes368
+ * @since 1.0
+ */
 public class Affine implements CiphersAndAlgorithms {
     private final int[] VALID_A = {1,3,5,7,9,11,15,17,19,21,23,25};
     private int a;

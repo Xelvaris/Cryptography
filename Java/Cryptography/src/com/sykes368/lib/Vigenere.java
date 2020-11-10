@@ -1,5 +1,9 @@
 package com.sykes368.lib;
 
+/** Vigenere Cipher
+ * @author Sykes368
+ * @since 1.0
+ */
 public class Vigenere implements CiphersAndAlgorithms {
     private String keyword;
 

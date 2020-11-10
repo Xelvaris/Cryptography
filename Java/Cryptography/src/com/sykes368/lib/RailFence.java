@@ -1,5 +1,9 @@
 package com.sykes368.lib;
 
+/** RailFence Cipher
+ * @author Sykes368
+ * @since 1.0
+ */
 public class RailFence implements CiphersAndAlgorithms {
     private int rails;
 

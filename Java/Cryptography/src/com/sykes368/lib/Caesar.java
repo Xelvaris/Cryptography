@@ -1,5 +1,9 @@
 package com.sykes368.lib;
 
+/** Caesar Cipher
+ * @author Sykes368
+ * @since 1.0
+ */
 public class Caesar implements CiphersAndAlgorithms {
     private int shift;
 
