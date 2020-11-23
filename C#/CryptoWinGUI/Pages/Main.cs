@@ -50,5 +50,10 @@ namespace CryptoWinGUI
             CW cw = new CW();
             cw.Show();
         }
+
+        private void CryptologyHMB_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

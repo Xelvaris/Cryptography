@@ -1,0 +1,127 @@
+/** Main
+ * @author Sykes368
+ * @since 1.0-g
+ */
+.root {
+    -swatch-home-menu-button-color: rgb(50, 50, 50);
+    -swatch-background: rgb(37, 37, 37);
+
+
+    -swatch-grey: rgb(200.0, 200.0, 200.0);
+    -swatch-dark-grey: rgb(150.0, 150.0, 150.0);
+    -swatch-light-grey: rgb(230.0, 230.0, 230.0);
+    -swatch-toolbar: rgb(245.0, 245.0, 245.0);
+    -swatch-toolbar-selected: rgb(215.0, 215.0, 215.0);
+
+
+    -fx-background-color: -swatch-background;
+}
+
+.topbar {
+    -fx-background-color: rgb(28, 28, 28);
+}
+
+.pane {
+    -fx-background-color: -swatch-background;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Labels    			                                                       *
+ *                                                                             *
+ ******************************************************************************/
+.byline {
+    -fx-text-fill: rgb(70, 70, 70);
+}
+
+.page-label {
+    -fx-text-fill: rgb(3, 169, 244);
+    -fx-font-size: 29px;
+}
+
+/*******************************************************************************
+*                                                                             *
+* Button & ToggleButton                                                       *
+*                                                                             *
+******************************************************************************/
+
+
+
+.button {
+    -fx-effect: null;
+    -fx-background-color: transparent;
+}
+
+.toggle-button, .button {
+    -fx-text-fill: black;
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER;
+
+}
+
+.home-menu-button {
+    -fx-background-color: rgb(50, 50, 50);
+    -fx-text-fill: rgb(30, 169, 244);
+}
+
+.home-menu-button:armed, .home-menu-button:default:armed {
+    -fx-background-color: rgb(100, 100, 100);
+
+}
+
+.home-menu-button:hover {
+    -fx-border-color: rgb(100, 100, 100);
+    -fx-text-fill: rgb(120, 169, 244);
+}
+
+.icon-button, .button, .home-menu-button {
+    -fx-font-family: 'Roboto';
+    -fx-font-size: 24px;
+}
+.icon-button {
+    -fx-background-color: transparent;
+    -fx-pref-height: 42;
+    -fx-pref-width: 42;
+    -fx-min-height: 42;
+    -fx-min-width: 42;
+    -fx-padding: 0;
+}
+.icon-button:pressed {
+    -fx-background-color: rgb(48, 48, 48);
+}
+
+.icon-button:hover {
+    -fx-border-color: rgb(48, 48, 48);
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Scroll Bar			                                                       *
+ *                                                                             *
+ ******************************************************************************/
+.scroll-bar:vertical>.track-background, .scroll-bar:horizontal>.track-background
+{
+    -fx-background-color: -swatch-light-grey;
+    -fx-background-insets: 0.0;
+}
+
+.scroll-bar:vertical>.thumb, .scroll-bar:horizontal>.thumb {
+    -fx-background-color: -swatch-grey;
+    -fx-background-insets: 0.0;
+    -fx-background-radius: 4.0;
+}
+
+.scroll-bar>.increment-button, .scroll-bar>.decrement-button,
+.scroll-bar:hover>.increment-button, .scroll-bar:hover>.decrement-button
+{
+    -fx-background-color: transparent;
+}
+
+.scroll-bar>.increment-button>.increment-arrow, .scroll-bar>.decrement-button>.decrement-arrow
+{
+    -fx-background-color: -swatch-dark-grey;
+}
+
+.scroll-bar>.track-background {
+    -fx-background-color: transparent;
+}

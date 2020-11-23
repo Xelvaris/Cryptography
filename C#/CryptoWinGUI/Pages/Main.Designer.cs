@@ -131,6 +131,7 @@
             this.CryptologyHMB.TabIndex = 49;
             this.CryptologyHMB.Text = "Cryptology";
             this.CryptologyHMB.UseVisualStyleBackColor = false;
+            this.CryptologyHMB.Click += new System.EventHandler(this.CryptologyHMB_Click);
             // 
             // CiphersHMB
             // 
