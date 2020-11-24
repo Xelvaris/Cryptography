@@ -4,43 +4,18 @@ package com.sykes368.lib;
  * @author Sykes368
  * @since 1.0
  */
-public class Affine implements CiphersAndAlgorithms {
+public class Affine {
     private final int[] VALID_A = {1,3,5,7,9,11,15,17,19,21,23,25};
-    private int a;
-    private int b;
 
-    public Affine(int a, int b) {
-        this.a = a;
-        this.b = b;
+    public String encrypt(int a, int b, String plaintext) {
+        return affine(plaintext, a, b, false);
     }
 
-    public int getA() {
-        return a;
+    public String decrypt(int a, int b, String ciphertext) {
+        return affine(ciphertext, a, b, true);
     }
 
-    public int getB() {
-        return b;
-    }
-
-    public void setA(int a) {
-        this.a = a;
-    }
-
-    public void setB(int b) {
-        this.b = b;
-    }
-
-    @Override
-    public String encrypt(String plaintext) {
-        return affine(plaintext, false);
-    }
-
-    @Override
-    public String decrypt(String ciphertext) {
-        return affine(ciphertext, true);
-    }
-
-    private String affine(String input, boolean decode) {
+    private String affine(String input, int a, int b, boolean decode) {
         if (!isAValid(a)) {
             return "ERROR: The value of 'a' is invalid. Valid values are 1,3,5,7,9,11,15,17,19,21,23, and 25.";
         }

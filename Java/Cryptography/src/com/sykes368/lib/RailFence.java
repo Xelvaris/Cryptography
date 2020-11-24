@@ -4,23 +4,8 @@ package com.sykes368.lib;
  * @author Sykes368
  * @since 1.0
  */
-public class RailFence implements CiphersAndAlgorithms {
-    private int rails;
-
-    public RailFence(int rails) {
-        this.rails = rails;
-    }
-
-    public int getRails() {
-        return rails;
-    }
-
-    public void setRails(int rails) {
-        this.rails = rails;
-    }
-
-    @Override
-    public String encrypt(String plaintext) {
+public class RailFence {
+    public static String encrypt(int rails, String plaintext) {
         if (!plaintext.matches("^[ A-Za-z]+$")) {
             return "ERROR: Input can only be letters and spaces";
         }
@@ -54,8 +39,7 @@ public class RailFence implements CiphersAndAlgorithms {
         return new String(output);
     }
 
-    @Override
-    public String decrypt(String ciphertext) {
+    public static String decrypt(int rails, String ciphertext) {
         if (!ciphertext.matches("^[ A-Za-z]+$")) {
             return "ERROR: Input can only be letters and spaces";
         }

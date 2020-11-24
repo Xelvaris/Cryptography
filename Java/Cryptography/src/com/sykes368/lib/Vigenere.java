@@ -4,32 +4,17 @@ package com.sykes368.lib;
  * @author Sykes368
  * @since 1.0
  */
-public class Vigenere implements CiphersAndAlgorithms {
-    private String keyword;
-
-    public Vigenere(String keyword) {
-        this.keyword = keyword.toUpperCase().replace(" ", "");
+public class Vigenere {
+    public static String encrypt(String keyword, String plaintext) {
+       return vigenere(plaintext, keyword, false);
     }
 
-    public String getKeyword() {
-        return keyword;
+    public static String decrypt(String keyword, String ciphertext) {
+       return vigenere(ciphertext, keyword, true);
     }
 
-    public void setKeyword(String keyword) {
-        this.keyword = keyword.toUpperCase().replace(" ", "");
-    }
-
-    @Override
-    public String encrypt(String plaintext) {
-       return vigenere(plaintext, false);
-    }
-
-    @Override
-    public String decrypt(String ciphertext) {
-       return vigenere(ciphertext, true);
-    }
-
-    private String vigenere(String input, boolean decode) {
+    private static String vigenere(String input, String keyword, boolean decode) {
+        keyword = keyword.toUpperCase().replace(" ", "");
         if (keyword == null) {
             return "Error: You must enter a keyword";
         }
