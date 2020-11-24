@@ -4,10 +4,10 @@
 
 |                                      | C# | Java |     
 | ------------------------------------ | -- | ---- |
-|Caesar Cipher                         | ✔ | ✔ |
-|Affine Cipher                         | ✔ | ✔ |
-|Rail-Fence Cipher                     | ✔ | ✔ |
-|Vigenère Cipher                       | ✔ | ✔ |
+|Caesar Cipher                         | ✔ |  ✔  |
+|Affine Cipher                         | ✔ |  ✔  |
+|Rail-Fence Cipher                     | ✔ |  ✔  |
+|Vigenère Cipher                       | ✔ |  ✔  |
 |Playfair Cipher                       | ✔ |
 |The Enigma Machine                    | ✔ |
 |Data Encryption Standard (DES)        | ✔ |
