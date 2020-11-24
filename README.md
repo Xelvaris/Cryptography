@@ -3,7 +3,7 @@
 ## Included Ciphers and Algorithms
 
 |                                      | C# | Java |     
-| ------------------------------------ | -- | ---- |
+| ------------------------------------ | -- | --- |
 |Caesar Cipher                         | ✔ |  ✔  |
 |Affine Cipher                         | ✔ |  ✔  |
 |Rail-Fence Cipher                     | ✔ |  ✔  |
