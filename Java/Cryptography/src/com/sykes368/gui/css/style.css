@@ -39,42 +39,34 @@
     -fx-font-size: 29px;
 }
 
-/*******************************************************************************
+.box-label {
+    -fx-text-fill: rgb(3, 169, 244);
+    -fx-font-size: 20px;
+}
+
+/******************************************************************************
 *                                                                             *
 * Button & ToggleButton                                                       *
 *                                                                             *
 ******************************************************************************/
 
-
-
 .button {
-    -fx-effect: null;
-    -fx-background-color: transparent;
+    -fx-background-color: rgb(50, 50, 50);
+    -fx-text-fill: rgb(30, 169, 244);
+    -fx-font-family: 'Roboto';
+    -fx-font-size: 18px;
 }
 
-.toggle-button, .button {
-    -fx-text-fill: black;
-    -fx-background-color: transparent;
-    -fx-alignment: CENTER;
+.button:armed, .button:default:armed {
+    -fx-background-color: rgb(100, 100, 100);
+}
+
+.button:hover {
+    -fx-border-color: rgb(100, 100, 100);
 
 }
 
 .home-menu-button {
-    -fx-background-color: rgb(50, 50, 50);
-    -fx-text-fill: rgb(30, 169, 244);
-}
-
-.home-menu-button:armed, .home-menu-button:default:armed {
-    -fx-background-color: rgb(100, 100, 100);
-
-}
-
-.home-menu-button:hover {
-    -fx-border-color: rgb(100, 100, 100);
-    -fx-text-fill: rgb(120, 169, 244);
-}
-
-.icon-button, .button, .home-menu-button {
     -fx-font-family: 'Roboto';
     -fx-font-size: 24px;
 }
