@@ -73,7 +73,7 @@ public class AffinePage {
 
         decrypt.setOnAction(e -> {
             if (!bNum.getText().matches("^[0-9]+$")) {
-                outputBox.setText("[ERROR]: The b value must be a number");
+                outputBox.setText("[ERROR]: The b value must be a positive number");
             } else {
                 int b = Integer.parseInt(bNum.getText());
                 outputBox.setText(Affine.decrypt(aNum.getValue(), b, inputBox.getText()));

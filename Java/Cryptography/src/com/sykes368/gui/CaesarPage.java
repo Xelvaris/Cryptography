@@ -65,7 +65,7 @@ public class CaesarPage {
 
         decrypt.setOnAction(e -> {
             if (!shiftNum.getText().matches("^[0-9]+$")) {
-                outputBox.setText("[ERROR]: The shift value must be a number");
+                outputBox.setText("[ERROR]: The shift value must be a positive number");
             } else {
                 int s = Integer.parseInt(shiftNum.getText());
                 outputBox.setText(Caesar.decrypt(s, inputBox.getText()));
