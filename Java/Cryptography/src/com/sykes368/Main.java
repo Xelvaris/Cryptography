@@ -55,20 +55,20 @@ public class Main extends Application {
         buttons[2].setText("Rail-Fence");
         buttons[3].setText("Vigenère");
 
+        // Home page
+        FlowPane homePage = new FlowPane();
+        homePage.getStyleClass().add("pane");
+        homePage.setVgap(5);
+        homePage.setHgap(5);
+        homePage.setPadding(new Insets(5));
 
-
-        FlowPane flowPane = new FlowPane();
-        flowPane.getStyleClass().add("pane");
-        flowPane.setVgap(5);
-        flowPane.setHgap(5);
-        flowPane.setPadding(new Insets(5));
-
+        // Adds the buttons to the home page
         for (Button e: buttons) {
-            flowPane.getChildren().add(e);
+            homePage.getChildren().add(e);
         }
 
-
-        ScrollPane page = new ScrollPane(flowPane);
+        // View page
+        ScrollPane page = new ScrollPane(homePage);
         page.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
         page.setFitToWidth(true);
         page.setFitToHeight(true);
@@ -92,7 +92,7 @@ public class Main extends Application {
         // HomeButton Click method
         homeButton.setOnAction(e -> {
             if(!pageLabel.getText().equals("Home")) {
-                page.setContent(flowPane);
+                page.setContent(homePage);
                 rootLayout.getChildren().add(byLine);
                 pageLabel.setText("Home");
             }
