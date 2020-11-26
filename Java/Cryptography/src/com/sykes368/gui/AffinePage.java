@@ -1,8 +1,9 @@
 package com.sykes368.gui;
 
-import com.sykes368.lib.Caesar;
+import com.sykes368.lib.Affine;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.FlowPane;
@@ -10,21 +11,28 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 
-
-/** Main
- * @author Sykes368
- * @since 1.0-g
- */
-public class CaesarPage {
+public class AffinePage {
     public static Pane show() {
 
-        // Shift
-        Label shiftLabel = new Label("Shift: ");
-        shiftLabel.getStyleClass().add("box-label");
-        TextField shiftNum = new TextField();
-        shiftNum.setPromptText("Enter a Number.");
+        // a
+        Label aLabel = new Label("a: ");
+        aLabel.getStyleClass().add("box-label");
+        ComboBox<Integer> aNum = new ComboBox<>();
+        aNum.getItems().addAll(1,3,5,7,9,11,15,17,19,21,23,25);
+        aNum.setValue(1);
+        HBox aBox = new HBox(aLabel, aNum);
 
-        HBox shift = new HBox(shiftLabel, shiftNum);
+        // b
+        Label bLabel = new Label("b: ");
+        bLabel.getStyleClass().add("box-label");
+        TextField bNum = new TextField();
+        bNum.setPromptText("Enter a Number.");
+
+        HBox bBox = new HBox(bLabel, bNum);
+
+        // Parameters
+        HBox paramBox = new HBox(aBox, bBox);
+        paramBox.setSpacing(20);
 
         // Input
         Label inputLabel = new Label("Input: ");
@@ -55,26 +63,26 @@ public class CaesarPage {
         buttons.setSpacing(20);
 
         encrypt.setOnAction(e -> {
-            if (!shiftNum.getText().matches("^[0-9]+$")) {
-                outputBox.setText("[ERROR]: The shift value must be a positive number");
+            if (!bNum.getText().matches("^[0-9]+$")) {
+                outputBox.setText("[ERROR]: The b value must be a positive number");
             } else {
-                int s = Integer.parseInt(shiftNum.getText());
-                outputBox.setText(Caesar.encrypt(s, inputBox.getText()));
+                int b = Integer.parseInt(bNum.getText());
+                outputBox.setText(Affine.encrypt(aNum.getValue(), b, inputBox.getText()));
             }
         });
 
         decrypt.setOnAction(e -> {
-            if (!shiftNum.getText().matches("^[0-9]+$")) {
-                outputBox.setText("[ERROR]: The shift value must be a number");
+            if (!bNum.getText().matches("^[0-9]+$")) {
+                outputBox.setText("[ERROR]: The b value must be a number");
             } else {
-                int s = Integer.parseInt(shiftNum.getText());
-                outputBox.setText(Caesar.decrypt(s, inputBox.getText()));
+                int b = Integer.parseInt(bNum.getText());
+                outputBox.setText(Affine.decrypt(aNum.getValue(), b, inputBox.getText()));
             }
         });
 
 
 
-        VBox uiControls = new VBox(shift, input, output, buttons);
+        VBox uiControls = new VBox(paramBox, input, output, buttons);
         uiControls.setSpacing(10);
 
         // Creates flowPane with padding of 5

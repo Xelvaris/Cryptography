@@ -1,5 +1,6 @@
 package com.sykes368;
 
+import com.sykes368.gui.AffinePage;
 import com.sykes368.gui.CaesarPage;
 import com.sykes368.gui.UI;
 import javafx.application.Application;
@@ -41,8 +42,8 @@ public class Main extends Application {
 
 
         // Home Menu Buttons
-        Button[] buttons = new Button[20];
-        for (int i = 0; i < 20; i++) {
+        Button[] buttons = new Button[24];
+        for (int i = 0; i < 24; i++) {
             buttons[i] = new Button();
             buttons[i].setMinSize(200,200);
             buttons[i].getStyleClass().add("home-menu-button");
@@ -50,6 +51,9 @@ public class Main extends Application {
 
         // Sets the button text
         buttons[0].setText("Caesar");
+        buttons[1].setText("Affine");
+        buttons[2].setText("Rail-Fence");
+        buttons[3].setText("Vigenère");
 
 
 
@@ -75,7 +79,7 @@ public class Main extends Application {
         VBox rootLayout = new VBox(topBar, page, byLine);
 
         // Creates background scene
-        Scene scene = new Scene(rootLayout, 1290, 720);
+        Scene scene = new Scene(rootLayout, 1250, 720);
         scene.getStylesheets().add(UI.CSS_PATH);
 
         // Initializes the stage
@@ -97,8 +101,15 @@ public class Main extends Application {
         // Caesar Button Click Method
         buttons[0].setOnAction(e -> {
             page.setContent(CaesarPage.show());
-            rootLayout.getChildren().remove(2);;
+            rootLayout.getChildren().remove(2);
             pageLabel.setText("Caesar");
+        });
+
+        // Affine Button Click Method
+        buttons[1].setOnAction(e -> {
+            page.setContent(AffinePage.show());
+            rootLayout.getChildren().remove(2);
+            pageLabel.setText("Affine");
         });
     }
 
@@ -115,6 +126,6 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
-        launch(args);
+       launch(args);
     }
 }
