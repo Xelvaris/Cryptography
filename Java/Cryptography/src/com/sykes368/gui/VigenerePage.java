@@ -48,13 +48,9 @@ public class VigenerePage {
         buttons.getStyleClass().add("");
         buttons.setSpacing(20);
 
-        encrypt.setOnAction(e -> {
-            outputBox.setText(Vigenere.encrypt(keywordText.getText(), inputBox.getText()));
-        });
+        encrypt.setOnAction(e -> outputBox.setText(Vigenere.encrypt(keywordText.getText(), inputBox.getText())));
 
-        decrypt.setOnAction(e -> {
-            outputBox.setText(Vigenere.decrypt(keywordText.getText(), inputBox.getText()));
-        });
+        decrypt.setOnAction(e -> outputBox.setText(Vigenere.decrypt(keywordText.getText(), inputBox.getText())));
 
 
         VBox uiControls = new VBox(keyword, input, output, buttons);
