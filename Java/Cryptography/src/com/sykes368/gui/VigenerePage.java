@@ -1,6 +1,6 @@
 package com.sykes368.gui;
 
-import com.sykes368.lib.Caesar;
+import com.sykes368.lib.Vigenere;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -10,20 +10,15 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 
-
-/** Main
- * @author Sykes368
- * @since 1.0-g
- */
-public class CaesarPage {
+public class VigenerePage {
     public static Pane show() {
-        // Shift
-        Label shiftLabel = new Label("Shift: ");
-        shiftLabel.getStyleClass().add("box-label");
-        TextField shiftNum = new TextField();
-        shiftNum.setPromptText("Enter a Number.");
+        // Rails
+        Label keywordLabel = new Label("Keyword: ");
+        keywordLabel.getStyleClass().add("box-label");
+        TextField keywordText = new TextField();
+        keywordText.setPromptText("Enter keyword.");
 
-        HBox shift = new HBox(shiftLabel, shiftNum);
+        HBox keyword = new HBox(keywordLabel, keywordText);
 
         // Input
         Label inputLabel = new Label("Input: ");
@@ -54,26 +49,15 @@ public class CaesarPage {
         buttons.setSpacing(20);
 
         encrypt.setOnAction(e -> {
-            if (!shiftNum.getText().matches("^[0-9]+$")) {
-                outputBox.setText("[ERROR]: The shift value must be a positive number");
-            } else {
-                int s = Integer.parseInt(shiftNum.getText());
-                outputBox.setText(Caesar.encrypt(s, inputBox.getText()));
-            }
+            outputBox.setText(Vigenere.encrypt(keywordText.getText(), inputBox.getText()));
         });
 
         decrypt.setOnAction(e -> {
-            if (!shiftNum.getText().matches("^[0-9]+$")) {
-                outputBox.setText("[ERROR]: The shift value must be a positive number");
-            } else {
-                int s = Integer.parseInt(shiftNum.getText());
-                outputBox.setText(Caesar.decrypt(s, inputBox.getText()));
-            }
+            outputBox.setText(Vigenere.decrypt(keywordText.getText(), inputBox.getText()));
         });
 
 
-
-        VBox uiControls = new VBox(shift, input, output, buttons);
+        VBox uiControls = new VBox(keyword, input, output, buttons);
         uiControls.setSpacing(10);
 
         // Creates flowPane with padding of 5

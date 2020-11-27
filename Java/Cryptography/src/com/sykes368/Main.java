@@ -1,8 +1,6 @@
 package com.sykes368;
 
-import com.sykes368.gui.AffinePage;
-import com.sykes368.gui.CaesarPage;
-import com.sykes368.gui.UI;
+import com.sykes368.gui.*;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -42,8 +40,8 @@ public class Main extends Application {
 
 
         // Home Menu Buttons
-        Button[] buttons = new Button[24];
-        for (int i = 0; i < 24; i++) {
+        Button[] buttons = new Button[4];
+        for (int i = 0; i < buttons.length; i++) {
             buttons[i] = new Button();
             buttons[i].setMinSize(200,200);
             buttons[i].getStyleClass().add("home-menu-button");
@@ -110,6 +108,20 @@ public class Main extends Application {
             page.setContent(AffinePage.show());
             rootLayout.getChildren().remove(2);
             pageLabel.setText("Affine");
+        });
+
+        // Rail-Fence Button Click Method
+        buttons[2].setOnAction(e -> {
+            page.setContent(RailFencePage.show());
+            rootLayout.getChildren().remove(2);
+            pageLabel.setText("Rail-Fence");
+        });
+
+        // Vigenere Button Click Method
+        buttons[3].setOnAction(e -> {
+            page.setContent(VigenerePage.show());
+            rootLayout.getChildren().remove(2);
+            pageLabel.setText("Vigenère");
         });
     }
 

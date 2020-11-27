@@ -1,6 +1,6 @@
 package com.sykes368.gui;
 
-import com.sykes368.lib.Caesar;
+import com.sykes368.lib.RailFence;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -10,20 +10,15 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 
-
-/** Main
- * @author Sykes368
- * @since 1.0-g
- */
-public class CaesarPage {
+public class RailFencePage {
     public static Pane show() {
-        // Shift
-        Label shiftLabel = new Label("Shift: ");
-        shiftLabel.getStyleClass().add("box-label");
-        TextField shiftNum = new TextField();
-        shiftNum.setPromptText("Enter a Number.");
+        // Rails
+        Label railsLabel = new Label("Rails: ");
+        railsLabel.getStyleClass().add("box-label");
+        TextField railNum = new TextField();
+        railNum.setPromptText("Enter a Number.");
 
-        HBox shift = new HBox(shiftLabel, shiftNum);
+        HBox rails = new HBox(railsLabel, railNum);
 
         // Input
         Label inputLabel = new Label("Input: ");
@@ -54,26 +49,26 @@ public class CaesarPage {
         buttons.setSpacing(20);
 
         encrypt.setOnAction(e -> {
-            if (!shiftNum.getText().matches("^[0-9]+$")) {
-                outputBox.setText("[ERROR]: The shift value must be a positive number");
+            if (!railNum.getText().matches("^[0-9]+$")) {
+                outputBox.setText("[ERROR]: The number of rails must be a positive number");
             } else {
-                int s = Integer.parseInt(shiftNum.getText());
-                outputBox.setText(Caesar.encrypt(s, inputBox.getText()));
+                int r = Integer.parseInt(railNum.getText());
+                outputBox.setText(RailFence.encrypt(r, inputBox.getText()));
             }
         });
 
         decrypt.setOnAction(e -> {
-            if (!shiftNum.getText().matches("^[0-9]+$")) {
-                outputBox.setText("[ERROR]: The shift value must be a positive number");
+            if (!railNum.getText().matches("^[0-9]+$")) {
+                outputBox.setText("[ERROR]: The number of rails must be a positive number");
             } else {
-                int s = Integer.parseInt(shiftNum.getText());
-                outputBox.setText(Caesar.decrypt(s, inputBox.getText()));
+                int r = Integer.parseInt(railNum.getText());
+                outputBox.setText(RailFence.decrypt(r, inputBox.getText()));
             }
         });
 
 
 
-        VBox uiControls = new VBox(shift, input, output, buttons);
+        VBox uiControls = new VBox(rails, input, output, buttons);
         uiControls.setSpacing(10);
 
         // Creates flowPane with padding of 5
