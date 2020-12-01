@@ -83,7 +83,7 @@ public class Main extends Application {
         // Initializes the stage
         primaryStage.setTitle("Cryptography");
         primaryStage.setScene(scene);
-        primaryStage.getIcons().add(new Image("com/sykes368/gui/icons/programIcon.png"));
+        primaryStage.getIcons().add(new Image(UI.ICON_PATH + "programIcon.png"));
         primaryStage.show();
 
 
