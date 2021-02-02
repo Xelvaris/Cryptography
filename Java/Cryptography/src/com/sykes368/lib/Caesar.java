@@ -4,34 +4,18 @@ package com.sykes368.lib;
  * @author Sykes368
  * @since 1.0
  */
-public class Caesar implements CiphersAndAlgorithms {
-    private int shift;
-
-    public Caesar(int shift) {
-        this.shift = shift;
+public class Caesar {
+    public static String encrypt(int shift, String plaintext) {
+        return caesar(plaintext, shift, false);
     }
 
-    public int getShift() {
-        return shift;
-    }
-
-    public void setShift(int shift) {
-        this.shift = shift;
-    }
-
-    @Override
-    public String encrypt(String plaintext) {
-        return caesar(plaintext, this.shift, false);
-    }
-
-    @Override
-    public String decrypt(String ciphertext) {
-        return caesar(ciphertext, this.shift, true);
+    public static String decrypt(int shift, String ciphertext) {
+        return caesar(ciphertext, shift, true);
     }
 
     private static String caesar(String input, int shift, boolean decode) {
         if (input == null || !input.matches("^[ A-Za-z]+$")) {
-            return "ERROR: Input cannot be empty and Only letters and spaces are allowed as input";
+            return "ERROR: Input cannot be empty and only letters and spaces are allowed as input";
         }
 
         char[] buffer = input.replace(" ", "").toUpperCase().toCharArray();
