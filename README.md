@@ -9,7 +9,7 @@ This is a program that I am creating to show implementations of Cryptology over 
 |Affine Cipher                         | ✔ |  ✔  |
 |Rail-Fence Cipher                     | ✔ |  ✔  |
 |Vigenère Cipher                       | ✔ |  ✔  |
-|Playfair Cipher                       | ✔ |
+|Playfair Cipher                       | ✔ |  ✔  |
 |The Enigma Machine                    | ✔ |
 |Data Encryption Standard (DES)        | ✔ |
 |Triple DES                            | ✔ |
