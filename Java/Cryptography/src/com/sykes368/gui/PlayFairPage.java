@@ -1,6 +1,6 @@
 package com.sykes368.gui;
 
-import com.sykes368.lib.Vigenere;
+import com.sykes368.lib.PlayFair;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -10,7 +10,11 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 
-public class VigenerePage {
+/** PlayFair Page
+ * @author Sykes368
+ * @since 1.0-g
+ */
+public class PlayFairPage {
     public static Pane show() {
         // Keyword
         Label keywordLabel = new Label("Keyword: ");
@@ -48,9 +52,9 @@ public class VigenerePage {
         buttons.getStyleClass().add("");
         buttons.setSpacing(20);
 
-        encrypt.setOnAction(e -> outputBox.setText(Vigenere.encrypt(keywordText.getText(), inputBox.getText())));
+        encrypt.setOnAction(e -> outputBox.setText(PlayFair.encrypt(keywordText.getText(), inputBox.getText())));
 
-        decrypt.setOnAction(e -> outputBox.setText(Vigenere.decrypt(keywordText.getText(), inputBox.getText())));
+        decrypt.setOnAction(e -> outputBox.setText(PlayFair.decrypt(keywordText.getText(), inputBox.getText())));
 
 
         VBox uiControls = new VBox(keyword, input, output, buttons);

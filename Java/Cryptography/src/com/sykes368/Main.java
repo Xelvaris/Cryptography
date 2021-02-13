@@ -40,7 +40,7 @@ public class Main extends Application {
 
 
         // Home Menu Buttons
-        Button[] buttons = new Button[4];
+        Button[] buttons = new Button[5];
         for (int i = 0; i < buttons.length; i++) {
             buttons[i] = new Button();
             buttons[i].setMinSize(200,200);
@@ -52,6 +52,7 @@ public class Main extends Application {
         buttons[1].setText("Affine");
         buttons[2].setText("Rail-Fence");
         buttons[3].setText("Vigenère");
+        buttons[4].setText("PlayFair");
 
         // Home page
         FlowPane homePage = new FlowPane();
@@ -123,12 +124,19 @@ public class Main extends Application {
             rootLayout.getChildren().remove(2);
             pageLabel.setText("Vigenère");
         });
+
+        // PlayFair Button Click Method
+        buttons[4].setOnAction(e -> {
+            page.setContent(PlayFairPage.show());
+            rootLayout.getChildren().remove(2);
+            pageLabel.setText("PlayFair");
+        });
     }
 
     // Adds ByLine
     //TODO: Remove By line After COMSC110 or edit to Sykes368
     private static Node byLine() {
-        Label byLineText = new Label("By: Mitchel Sykes");
+        Label byLineText = new Label("By: Sykes368");
         byLineText.setPadding(new Insets(0, 5 ,0 ,0));
         byLineText.getStyleClass().add("byline");
         HBox byLine = new HBox(byLineText);
