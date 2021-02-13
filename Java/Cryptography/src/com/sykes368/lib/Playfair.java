@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @author Sykes368
  * @since 1.0
  */
-public class PlayFair {
+public class Playfair {
     private static final int ROW_INDEX = 0;
     private static final int COL_INDEX = 1;
 

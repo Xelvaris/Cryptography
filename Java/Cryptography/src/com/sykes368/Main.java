@@ -52,7 +52,7 @@ public class Main extends Application {
         buttons[1].setText("Affine");
         buttons[2].setText("Rail-Fence");
         buttons[3].setText("Vigenère");
-        buttons[4].setText("PlayFair");
+        buttons[4].setText("Playfair");
 
         // Home page
         FlowPane homePage = new FlowPane();
@@ -125,11 +125,11 @@ public class Main extends Application {
             pageLabel.setText("Vigenère");
         });
 
-        // PlayFair Button Click Method
+        // Playfair Button Click Method
         buttons[4].setOnAction(e -> {
-            page.setContent(PlayFairPage.show());
+            page.setContent(PlayfairPage.show());
             rootLayout.getChildren().remove(2);
-            pageLabel.setText("PlayFair");
+            pageLabel.setText("Playfair");
         });
     }
 

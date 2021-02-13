@@ -1,6 +1,6 @@
 package com.sykes368.gui;
 
-import com.sykes368.lib.PlayFair;
+import com.sykes368.lib.Playfair;
 import javafx.geometry.Insets;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -10,11 +10,11 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 
-/** PlayFair Page
+/** Playfair Page
  * @author Sykes368
  * @since 1.0-g
  */
-public class PlayFairPage {
+public class PlayfairPage {
     public static Pane show() {
         // Keyword
         Label keywordLabel = new Label("Keyword: ");
@@ -52,9 +52,9 @@ public class PlayFairPage {
         buttons.getStyleClass().add("");
         buttons.setSpacing(20);
 
-        encrypt.setOnAction(e -> outputBox.setText(PlayFair.encrypt(keywordText.getText(), inputBox.getText())));
+        encrypt.setOnAction(e -> outputBox.setText(Playfair.encrypt(keywordText.getText(), inputBox.getText())));
 
-        decrypt.setOnAction(e -> outputBox.setText(PlayFair.decrypt(keywordText.getText(), inputBox.getText())));
+        decrypt.setOnAction(e -> outputBox.setText(Playfair.decrypt(keywordText.getText(), inputBox.getText())));
 
 
         VBox uiControls = new VBox(keyword, input, output, buttons);
