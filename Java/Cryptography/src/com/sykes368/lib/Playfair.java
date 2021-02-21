@@ -1,5 +1,6 @@
 package com.sykes368.lib;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 /** PlayFair Cipher
@@ -33,7 +34,12 @@ public class Playfair {
             inputText = formatInput(input);
         }
 
-        char[][] keySquare = generateKeySquare(keyword);
+        char[][] keySquare;
+        try {
+            keySquare = generateKeySquare(keyword);
+        } catch (IOException e) {
+            return "ERROR: The keyword cannot contain the same letter more than once";
+        }
 
         for (String s: inputText) {
             char c1 = s.charAt(0);
@@ -142,7 +148,16 @@ public class Playfair {
         return output.toArray(new String[0]);
     }
 
-    private static char[][] generateKeySquare(String keyword) {
+    private static char[][] generateKeySquare(String keyword) throws IOException {
+        for (int i = 0; i < keyword.length(); i++) {
+            for (int j = 0; j < keyword.length(); j++) {
+                if(keyword.charAt(i) == keyword.charAt(j)) {
+                    throw new IOException();
+                }
+            }
+        }
+
+        System.out.println(keyword);
         String alphabet = "ABCDEFGHIKLMNOPQRSTUVWXYZ";
         for (char k: keyword.toUpperCase().toCharArray()) {
             alphabet = alphabet.replace(k, ' ').replace(" ", "");

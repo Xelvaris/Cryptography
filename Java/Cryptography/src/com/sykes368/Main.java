@@ -134,7 +134,6 @@ public class Main extends Application {
     }
 
     // Adds ByLine
-    //TODO: Remove By line After COMSC110 or edit to Sykes368
     private static Node byLine() {
         Label byLineText = new Label("By: Sykes368");
         byLineText.setPadding(new Insets(0, 5 ,0 ,0));
