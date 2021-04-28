@@ -40,10 +40,10 @@ public class Main extends Application {
 
 
         // Home Menu Buttons
-        Button[] buttons = new Button[5];
+        Button[] buttons = new Button[6];
         for (int i = 0; i < buttons.length; i++) {
             buttons[i] = new Button();
-            buttons[i].setMinSize(200,200);
+            buttons[i].setMinSize(210,210);
             buttons[i].getStyleClass().add("home-menu-button");
         }
 
@@ -53,6 +53,7 @@ public class Main extends Application {
         buttons[2].setText("Rail-Fence");
         buttons[3].setText("Vigenère");
         buttons[4].setText("Playfair");
+        buttons[5].setText("Enigma Machine");
 
         // Home page
         FlowPane homePage = new FlowPane();
@@ -78,7 +79,7 @@ public class Main extends Application {
         VBox rootLayout = new VBox(topBar, page, byLine);
 
         // Creates background scene
-        Scene scene = new Scene(rootLayout, 1250, 720);
+        Scene scene = new Scene(rootLayout, 1310, 720);
         scene.getStylesheets().add(UI.CSS_PATH);
 
         // Initializes the stage
@@ -130,6 +131,13 @@ public class Main extends Application {
             page.setContent(PlayfairPage.show());
             rootLayout.getChildren().remove(2);
             pageLabel.setText("Playfair");
+        });
+
+        // Enigma Machine Button Click Method
+        buttons[5].setOnAction(e -> {
+            page.setContent(EnigmaMachinePage.show());
+            rootLayout.getChildren().remove(2);
+            pageLabel.setText("Enigma Machine");
         });
     }
 

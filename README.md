@@ -10,7 +10,7 @@ This is a program that I am creating to show implementations of Cryptology over 
 |Rail-Fence Cipher                     | ✔ |  ✔  |
 |Vigenère Cipher                       | ✔ |  ✔  |
 |Playfair Cipher                       | ✔ |  ✔  |
-|The Enigma Machine                    | ✔ |
+|The Enigma Machine                    | ✔ |  ✔  |
 |Data Encryption Standard (DES)        | ✔ |
 |Triple DES                            | ✔ |
 |Secure Hash Algorithm 1 (SHA-1)       | ✔ |

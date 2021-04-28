@@ -10,6 +10,10 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 
+/** Vigenere Page
+ * @author Sykes368
+ * @since 1.0-g
+ */
 public class VigenerePage {
     public static Pane show() {
         // Keyword
